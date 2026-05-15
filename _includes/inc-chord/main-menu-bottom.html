@@ -1,0 +1,51 @@
+<div id="tuner-screen" class="tuner-overlay" style="display:none;">
+    <div style="display:flex; justify-content: space-between; align-items:center; margin-bottom:20px;">
+        <h3>Guitar Tuner</h3>
+        <div style="cursor:pointer; font-size: 28px;" onclick="closeTuner()">×</div>
+    </div>
+    <div style="flex:1; display:flex; align-items:center; justify-content:center;">
+        <p style="color:var(--text-muted)">Sensor Audio Ready...</p>
+    </div>
+</div>
+
+<div class="bottom-navigation-wrapper">
+    <div id="universal-rak" class="universal-rak">
+        <div id="pill-container" class="pill-container"></div>
+        <div id="main-control-bar" class="main-control-bar"></div>
+    </div>
+
+    <nav id="menu-bottom" class="menu-bottom">
+        <div class="menu-inner">
+            <div class="menu" data-type="metronome" onclick="handleMenuClick('metronome', this)">
+                <div class="wrapicon">
+                    <div class="btn-icon" data-icon="metronome"></div>
+                </div>
+                <p class="name-menu">Metronome</p>
+            </div>
+            <div class="menu" data-type="tuner" onclick="handleMenuClick('tuner', this)">
+                <div class="wrapicon">
+                    <div class="btn-icon" data-icon="tuner"></div>
+                </div>
+                <p class="name-menu">Guitar Tuner</p>
+            </div>
+            <div class="menu" data-type="transpose" onclick="handleMenuClick('transpose', this)">
+                <div class="wrapicon">
+                    <div class="btn-icon" data-icon="transpose"></div>
+                </div>
+                <p class="name-menu">Transpose</p>
+            </div>
+            <div class="menu" data-type="sizeFont" onclick="handleMenuClick('sizeFont', this)">
+                <div class="wrapicon">
+                    <div class="btn-icon" data-icon="textsize"></div>
+                </div>
+                <p class="name-menu">Size-Font</p>
+            </div>
+            <div class="menu" data-type="autoscroll" onclick="handleMenuClick('autoscroll', this)">
+                <div class="wrapicon">
+                    <div class="btn-icon" data-icon="autoscroll"></div>
+                </div>
+                <p class="name-menu">AutoScroll</p>
+            </div>
+        </div>
+    </nav>
+</div>

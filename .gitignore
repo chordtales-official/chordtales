@@ -1,0 +1,27 @@
+# --- JEKYLL BUILD ---
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# --- RUBY/BUNDLER ---
+.bundle/
+vendor/
+
+# --- NODE ---
+node_modules/
+npm-debug.log
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
+
+# --- EDITOR ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- ENV/SECRET ---
+.env
+.env.local

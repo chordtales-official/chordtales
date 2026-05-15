@@ -1,0 +1,247 @@
+/* --- SESI 01: VARIABLES & THEMES START --- */
+:root {
+    /* DARK MODE - "Warm Charcoal" */
+    --bg-body: #1C1F24;
+    --bg-container: #252930;
+    --bg-card: #2D323B;
+    --text-main: #DDE1E6;
+    --text-muted: #8B949E;
+    --accent-1: #E67E22;
+    --accent-2: #F39C12;
+    --border-color: #373D47;
+    --hr-color: #373D47;
+    --diagram-line: #A8B3C1;
+    --diagram-dot: #F39C12;
+    --diagram-text: #FFFFFF;
+    --diagram-fret: #E67E22;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-size-base: clamp(0.9375rem, 0.8239rem + 0.5682vw, 1.125rem);
+}
+
+[data-theme="light"] {
+    /* LIGHT MODE - "Warm Paper" */
+    --bg-body: #F6F5F2;
+    --bg-container: #FFFFFF;
+    --bg-card: #FBFAF8;
+    --text-main: #2C3338;
+    --text-muted: #6C757D;
+    --accent-1: #D35400;
+    --accent-2: #E67E22;
+    --border-color: #E1E4E8;
+    --hr-color: #D0D7DE;
+    --diagram-line: #4A5563;
+    --diagram-dot: #D35400;
+    --diagram-text: #FFFFFF;
+    --diagram-fret: #D35400;
+    --shadow: 0 2px 12px rgba(44, 51, 56, 0.08);
+}
+/* --- SESI 01: VARIABLES & THEMES END --- */
+
+/* --- SESI 02: RESET & BASE STYLES START --- */
+::selection { background-color: rgba(230, 126, 34, 0.3); color: var(--text-main); }
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; -webkit-font-smoothing: antialiased; }
+
+body {
+    color: var(--text-main);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--bg-body);
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+h1{line-height:1.3;}
+h2{line-height:1.4;}
+h3{line-height:1.5;}
+h4,p,span,a{line-height:1.7;}
+
+.hr {
+    border: none; outline: none; height: 1px;
+    background: var(--border-color);
+    margin: 24px 0;
+}
+/* --- SESI 02: RESET & BASE STYLES END --- */
+
+/* --- SESI 03: REKOMENDASI STYLES START --- */
+.rek-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+/* HALAMAN DETAIL */
+.rek-detail {
+    background: var(--bg-container);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+.rek-detail-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--bg-card);
+    margin-bottom: 20px;
+}
+.rek-detail-img img { width: 100%; height: 100%; object-fit: cover; }
+.rek-detail-noimg { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.rek-detail-noimg i { font-size: 48px; opacity: .3; }
+
+.rek-detail-body h1 { font-size: 1.75rem; margin-bottom: 8px; }
+.rek-detail-alasan { color: var(--text-muted); margin-bottom: 16px; }
+.rek-detail-content { margin: 24px 0; }
+.rek-detail-content p { margin-bottom: 16px; }
+
+.rek-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-1);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all .2s;
+}
+.rek-btn:hover { background: var(--accent-2); transform: translateY(-2px); }
+.rek-btn.disabled { background: var(--bg-card); color: var(--text-muted); pointer-events: none; }
+
+.rek-disclosure { display: block; margin-top: 16px; font-size: .8rem; color: var(--text-muted); }
+
+/* WIDGET ASIDE - INI YANG BENER */
+.widget-rekomendasi {
+    width: 100%;
+    background: var(--bg-container);
+    padding: 10px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+/* ASIDE BUAT CHORD: min 1000px jadi 450px, 1 kolom */
+@media (min-width: 768px) {
+    .widget-rekomendasi.landing{
+        padding: 30px 10px;
+        }
+    .widget-rekomendasi:not(.landing) {
+        max-width: 500px;
+        padding: 10px;
+        border-top: none;
+        border-bottom: none;
+        text-align: left;
+    }
+    .widget-rekomendasi.landing .rek-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px){
+    .widget-rekomendasi.landing{
+        padding: 30px 40px;
+        }
+}
+
+.widget-header.landing { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widget-header h2 { 
+    margin-top: 20px;
+}
+.widget-header h2 [data-icon]{
+    color: var(--text-muted);
+}
+.widget-header p{
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+/* DEFAULT: 1 kolom buat chord + HP */
+.rek-list {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 12px; 
+}
+
+.rek-card {
+    display: flex; 
+    gap: 12px; 
+    padding: 10px;
+    background: var(--bg-card);
+    border-radius: 8px; 
+    color: inherit;
+    border: 1px solid transparent;
+    transition: all .2s;
+}
+.rek-card:hover {
+    border-color: var(--accent-1); 
+    background: var(--bg-container); 
+}
+
+.rek-card-img {
+    width: 64px; 
+    height: 64px; 
+    flex-shrink: 0;
+    border-radius: 6px; 
+    overflow: hidden;
+    background: var(--bg-card);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.rek-card-img img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.rek-card-img i { opacity: .5; }
+
+.rek-card-body { 
+    display: flex; 
+    flex-direction: column; 
+    min-width: 0; 
+}
+.rek-card-body strong { 
+    font-size: .95rem; 
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.rek-card-body span { 
+    font-size: .8rem; 
+    color: var(--text-muted); 
+    margin: 2px 0 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.rek-card-btn { 
+    font-size: .8rem; 
+    font-weight: 600; 
+    color: var(--accent-1); 
+}
+
+.rek-more {
+    display: block; 
+    text-align: center; 
+    margin-top: 16px;
+    font-weight: 600; 
+    font-size: .9rem; 
+    color: var(--accent-1);
+}
+
+.rek-disclosure { 
+    display: block; 
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-size: .8rem; 
+    color: var(--text-muted); 
+}
+/* --- SESI 03: REKOMENDASI STYLES END --- */

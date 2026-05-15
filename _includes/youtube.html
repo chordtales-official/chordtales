@@ -1,0 +1,8 @@
+{% if include.id or page.youtube_id %}
+<div class="youtube-embed">
+  <a href="https://www.youtube.com/watch?v={{ include.id | default: page.youtube_id }}" target="_blank" rel="noopener">
+    <img src="https://img.youtube.com/vi/{{ include.id | default: page.youtube_id }}/hqdefault.jpg" alt="Tonton di YouTube" />
+    <div class="play-button">▶</div>
+  </a>
+</div>
+{% endif %}

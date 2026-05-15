@@ -1,0 +1,647 @@
+/* --- SESI 00: BREADCRUMBS STYLES START --- */
+.breadcrumbs {
+    max-width: 500px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.breadcrumbs [data-icon]{
+    margin-top: -3px;
+}
+.breadcrumbs a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.breadcrumbs a:hover {
+    color: var(--accent-1);
+}
+
+.breadcrumbs .separator {
+    color: var(--border-color);
+    font-weight: 300;
+    user-select: none;
+}
+
+.breadcrumbs [aria-current="page"] {
+    color: var(--accent-1);
+    font-weight: 600;
+}
+
+.youtube-embed {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16 / 8;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.youtube-embed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.youtube-embed .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+/* --- SESI 00: BREADCRUMBS STYLES END --- */
+
+/* --- SESI 01: LAYOUT STRUCTURE START --- */
+.chord-konten {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-chord {
+    width: 100%;
+    position: relative;
+    overflow: visible !important;
+}
+
+.sidebar-chord {
+    width: 100%;
+    height: fit-content;
+    background: var(--bg-container);
+}
+
+@media(min-width: 768px) {
+    .chord-konten .main-wrapper{
+        padding: 10px;
+    }
+}
+
+@media(min-width: 900px) {
+    .chord-konten{
+        max-width: 1000px;
+        padding: 0 30px;
+        margin: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .sidebar-chord .main-wrapper{
+        padding: 20px 10px;
+    }
+
+    .article-chord {
+        width: 500px; 
+        padding: 30px 0;
+    }
+
+    .sidebar-chord {
+        flex: 1;
+        max-width: 500px;
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 400;
+        border-left: 1px dotted var(--border-color);
+        border-bottom: 1px dotted var(--border-color);
+    }
+    .menu-inner{
+        padding: 0;
+    }
+}
+/* --- SESI 01: LAYOUT STRUCTURE END --- */
+
+/* --- SESI 02: STYLE HEADER CHORD START --- */
+.header-chord{
+    border-left: 5px solid var(--accent-1);
+    padding-left: 10px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+.title-chord strong{
+    color: var(--text-main);
+}
+.subtitle-chord{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-muted);
+    min-width: 0; /* biar anaknya bisa di-truncate */
+}
+.subtitle-chord [data-icon]{
+    position: relative;
+    transform: translateY(-1px);
+    margin-right: 5px;
+    color: var(--accent-2);
+    flex-shrink: 0;
+}
+.subtitle-chord .artis,
+.subtitle-chord .genre{
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 65%;
+}
+.subtitle-chord .artis span:last-child,
+.subtitle-chord .genre span:last-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.subtitle-chord .genre{
+    padding: 0 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-main);
+    flex-shrink: 0;
+}
+/* --- SESI 02: STYLE HEADER CHORD END --- */
+
+/* --- SESI 03: STYLE DIAGRAM BANK START --- */
+.diagram-bank {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.diagram-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.btn-toggle {
+    width: 38px;
+    height: 38px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-shrink: 0;
+    color: var(--accent-2);
+}
+
+.btn-toggle.active {
+    transform: rotate(180deg);
+}
+
+.collapsible-wrapper {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.collapsible-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.collapsible-wrapper.is-expanded {
+    max-height: 500px; 
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.chord-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    padding-top: 5px;
+}
+.chord-card {
+    background: var(--bg-container);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    line-height: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+}
+.chord-card svg {
+    overflow: visible;
+}
+
+.chord-card:hover {
+    border-color: var(--accent-1);
+    transform: translateY(-3px);
+}
+
+.collapsible-wrapper.is-expanded .chord-wrapper {
+    flex-wrap: wrap; 
+}
+/* --- SESI 03: STYLE DIAGRAM BANK END --- */
+
+/* --- SESI 04: STYLE SECTION CONTENT START --- */
+.content {
+    font-size: 15px;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    font-family: Monospace;
+    color: var(--text-main);
+}
+
+
+.chord-highlight {
+    position: relative;
+    display: inline-block;
+    color: var(--accent-1);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 2px;
+    background: rgba(230, 126, 34, 0.08);
+    border-radius: 3px;
+    transition: background 0.2s;
+    margin: 8px 0 2px;
+}
+.chord-highlight:hover {
+    background: rgba(230, 126, 34, 0.15);
+}
+/* --- SESI 04: STYLE SECTION CONTENT END --- */
+
+/* --- SESI 05: DIAGRAM BANK REFIX TOOLTIP START --- */
+.chord-tooltip {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: scale(0.8); 
+    background: transparent; 
+    border: none;
+    padding: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 0;
+    pointer-events: none;
+    transition: transform 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity 0.2s;
+    will-change: transform;
+    transform-origin: bottom center; 
+}
+
+.chord-tooltip svg {
+    background: var(--bg-card);
+    border-radius: 6px;
+    padding: 4px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.chord-highlight:hover .chord-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1.7);
+}
+
+.chord-highlight.no-chord {
+    color: var(--text-muted);
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.chord-highlight.no-chord:hover {
+    color: var(--accent-1);
+    opacity: 1;
+}
+/* --- SESI 05: DIAGRAM BANK REFIX TOOLTIP END --- */
+
+/* --- SESI 06: BOTTOM NAVIGATION WRAPPER START --- */
+.bottom-navigation-wrapper {
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bottom {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-container);
+    border-top: 1px solid var(--border-color);
+}
+
+.menu-inner {
+    width: 620px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.menu-bottom .menu {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    color: var(--text-muted); cursor: pointer; transition: 0.2s;
+}
+
+.menu.active {
+    color: var(--accent-1);
+}
+.menu.active .wrapicon {
+    border: 1px solid var(--accent-1);
+    background: rgba(230, 126, 34, 0.1);
+}
+.menu.active [data-icon] {
+    color: var(--accent-1);
+}
+
+.menu-inner .wrapicon {
+    width: 40px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.menu-inner [data-icon]{
+    width: 1.2em;
+    height: 1.2em;
+    color: var(--text-muted);
+}
+
+.name-menu { font-size: 7px; text-transform: uppercase; letter-spacing: 0.5px; }
+/* --- SESI 06: BOTTOM NAVIGATION WRAPPER END --- */
+
+/* --- SESI 07: UNIVERSAL RAK & KAPSUL START --- */
+.universal-rak {
+    width: 100%; 
+    max-width: 1000px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    margin: 0 auto;
+}
+
+.pill-container {
+    padding-right: 15px; 
+    display: flex;
+    flex-direction: row-reverse; 
+    gap: 8px; 
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.info-pill {
+    pointer-events: auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px; border-radius: 20px;
+    font-size: 11px; display: flex; align-items: center; gap: 10px;
+    box-shadow: var(--shadow); animation: fadeIn 0.3s ease;
+    color: var(--text-main);
+}
+
+.info-pill .pill-content {
+    color: var(--accent-1);
+    font-weight: 600;
+}
+
+.info-pill b { 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    opacity: 0.7; 
+}
+.info-pill b:hover { 
+    opacity: 1; 
+    color: var(--accent-2);
+}
+
+.dot-blink {
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+    will-change: color, text-shadow;
+    display: inline-block;
+    font-style: normal;
+}
+/* --- SESI 07: UNIVERSAL RAK & KAPSUL END --- */
+
+/* --- SESI 08: MAIN CONTROL BAR START --- */
+.main-control-bar {
+    pointer-events: auto;
+    width: 100%; 
+    max-width: 600px;
+    height: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    display: flex; 
+    align-items: center; 
+    padding: 0 15px; 
+    justify-content: space-between;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-control-bar.open { height: 55px; box-shadow: var(--shadow); }
+
+.control-item { display: flex; align-items: center; gap: 10px; }
+.btn-tool {
+    background: var(--bg-body);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    width: 30px; height: 30px; border-radius: 5px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+}
+.btn-tool:hover {
+    border-color: var(--accent-1);
+    background: rgba(230, 126, 34, 0.1);
+}
+.btn-reset { 
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+}
+.btn-reset:hover { color: var(--accent-1); }
+.btn-close-main { 
+    cursor: pointer; 
+    font-size: 22px; 
+    opacity: 0.7; 
+    padding-left: 10px;
+    color: var(--text-muted);
+}
+.btn-close-main:hover {
+    opacity: 1;
+    color: var(--accent-2);
+}
+/* --- SESI 08: MAIN CONTROL BAR END --- */
+
+/* --- SESI 09: TUNER OVERLAY START --- */
+.tuner-overlay {
+    position: fixed; top: 0; left: 0;
+    width: 100%; max-width: 600px; height: 100vh;
+    background: var(--bg-body); z-index: 1005;
+    display: none; flex-direction: column; padding: 20px;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+/* --- SESI 09: TUNER OVERLAY END --- */
+
+/* --- SESI 10: RELATED ARTIST START --- */
+.widget.related-artist {
+    border: none;
+    background: var(--bg-container);
+    padding: 0 10px;
+}
+
+@media(max-width: 568px){
+    .widget.related-artist {
+    padding: 20px 10px;
+    }
+}
+
+.widget.related-artist .widget-title {
+    font-weight: 600;
+    color: var(--text-main);
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.widget-title [data-icon]{
+    margin-top: -4px;
+    color: var(--text-muted);
+}
+
+.related-list {
+    list-style: none;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.related-list li + li {
+    border-top: 1px solid var(--border);
+}
+
+.related-list li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 14px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 14px;
+    transition: background 0.15s;
+    border: 1px dotted var(--border-color);
+}
+
+.related-list li a:hover {
+    background: var(--bg-body);
+}
+.related-list li a:hover .song-artist{
+    color: var(--accent-1);
+}
+
+.song-row {
+    display: flex;
+    gap: 6px;
+    min-width: 0;
+    flex: 1;
+    align-items: center;
+}
+
+.song-row [data-icon]{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    background: var(--bg-container);
+    border: var(--border-color);
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.song-artist {
+    flex-shrink: 0;
+}
+
+.song-sep {
+    color: var(--text-muted);
+    opacity: 0.5;
+}
+
+.song-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-arrow {
+    color: var(--text-muted);
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 10px;
+    opacity: 0.4;
+}
+
+.related-list li a:hover .song-arrow {
+    opacity: 1;
+    color: var(--accent-1);
+}
+
+.related-list .empty {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.view-all-artist {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    padding-right: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent-1);
+    text-decoration: none;
+}
+
+.view-all-artist:hover {
+    text-decoration: underline;
+}
+/* --- SESI 10: RELATED ARTIST END --- */

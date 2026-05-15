@@ -1,0 +1,32 @@
+{% if page.artist and page.collection == 'chords' %}
+<div class="widget related-artist">
+    {% assign main_artist = page.artist | split: "|" | first | strip %}
+    {% assign all_related = site.chords | where_exp: "item", "item.artist contains main_artist" | where_exp: "item", "item.url != page.url" | sort: "date" | reverse %}
+    
+    <h2 class="widget-title"><div data-icon="lainnya"></div> Lainnya Dari {{ main_artist }} </h2>
+    <ul class="related-list">
+        {% for lagu in all_related limit: 10 %}
+        <li>
+            <a href="{{ lagu.url | relative_url }}">
+                <span class="song-row">
+                    <span class="song-artist"><div data-icon="pop"></div>{{ main_artist | slugify }}</span>
+                    <span class="song-sep">•</span>
+                    <span class="song-title">{{ lagu.title }}</span>
+                </span>
+                <span class="song-arrow">›</span>
+            </a>
+        </li>
+        {% endfor %}
+        
+        {% if all_related.size == 0 %}
+        <li class="empty">Belum ada lagu lain</li>
+        {% endif %}
+    </ul>
+
+    {% if all_related.size > 10 %}
+    <a href="/search/?q={{ main_artist | url_encode }}" class="view-all-artist">
+        Lihat {{ all_related.size | minus: 10 }} Lainnya →
+    </a>
+    {% endif %}
+</div>
+{% endif %}

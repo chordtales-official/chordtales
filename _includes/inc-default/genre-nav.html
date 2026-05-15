@@ -1,0 +1,7 @@
+{% assign sorted_genres = site.data.genres | sort: 'order' %}
+{% for genre in sorted_genres %}
+<a href="/genre/{{ genre.name }}/" class="dropdown-link">
+    <div data-icon="play"></div>
+   <span>{{ genre.title }}</span>
+</a>
+{% endfor %}

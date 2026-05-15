@@ -1,0 +1,24 @@
+<section class="latest-songs">
+  <div class="main-wrapper">
+    <h2><div data-icon="new" style="margin-top:-4px;"></div> Chord Terbaru</h2>
+    <p>Mainkan juga chord terbaru dari Chordtales.</p>
+    <div class="post-grid">
+      {% assign sorted_chords = site.chords | sort: 'date' | reverse %}
+      {% for song in sorted_chords limit: 6 %}
+        <article class="post-card">
+          <a href="{{ song.url }}">
+            <div class="post-card-header">
+              <div class="post-meta">
+                  <div data-icon="mic" style="width:28px; height:28px; padding:5px; background: var(--bg-body); border-radius:50px; border:1px solid var(--border-color)"></div>
+                  <p>{{ song.artist }}</p>
+              </div>
+              <span class="post-date">{{ song.date | date: "%d %b" }}</span>
+            </div>
+            <h3 class="post-title"><span>Kunci Gitar</span> {{ song.title }}</h3>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+    <a href="/daftar-chords/" class="btn-more">Lihat Daftar Chord →</a>
+  </div>
+</section>

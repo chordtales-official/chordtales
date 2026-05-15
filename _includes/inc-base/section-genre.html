@@ -1,0 +1,15 @@
+<section class="genre-section">
+<div class="main-wrapper">
+  <h2>CARI BERDASARKAN GENRE</h2>
+  <div class="genre-grid">
+    {%- for genre in site.data.genres -%}
+      {%- assign count = site.chords | where: "categories", genre.name | size -%}
+      <a href="/genre/{{ genre.name }}/" class="genre-cards">
+        <div class="genre-icon" data-icon="{{- genre.icon | strip | default: 'grid' -}}"></div>
+        <h3>{{ genre.title }}</h3>
+        <p>{{ count }} Lirik & Chord</p>
+      </a>
+    {%- endfor -%}
+  </div>
+</div>
+</section>

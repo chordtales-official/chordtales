@@ -1,0 +1,71 @@
+---
+layout: default
+title: Daftar Chord Gitar Lengkap
+permalink: /daftar-chords/
+pagination:
+  enabled: true
+  collection: chords
+  per_page: 20
+  permalink: '/daftar-chords/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+---
+
+<section class="all-chords genre-page">
+  <div class="main-wrapper">
+    <div class="page-header">
+      <h1 class="page-title">
+        <span data-icon="lainnya" data-rendered></span>
+        Daftar Chord
+      </h1>
+      <p class="post-count">{{ paginator.total_posts }} chord tersedia</p>
+    </div>
+    
+    {% if paginator.posts.size > 0 %}
+    <div class="post-list">
+      {% for song in paginator.posts %}
+        <article class="post-item">
+          <a href="{{ song.url }}">
+            <div class="post-content">
+              <h3 class="post-title">{{ song.title }}</h3>
+              <p class="post-meta">
+                <span data-icon="user" data-rendered></span>
+                {{ song.artist }} • {{ song.date | date: "%d %b %Y" }}
+              </p>
+            </div>
+            <span class="post-chevron" data-icon="chevron-down" data-rendered></span>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="page-btn">
+          <span data-icon="arrow-left" data-rendered></span> Prev
+        </a>
+      {% endif %}
+      
+      <span class="page-info">
+        Hal {{ paginator.page }} dari {{ paginator.total_pages }}
+      </span>
+      
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="page-btn">
+          Next <span data-icon="arrow-right" data-rendered></span>
+        </a>
+      {% endif %}
+    </nav>
+    {% endif %}
+    
+    {% else %}
+    <div class="empty-state">
+      <h3>Belum Ada Chord</h3>
+      <p>Chord belum ditambahkan. Balik lagi nanti ya.</p>
+      <a href="/" class="btn-back">Kembali ke Home</a>
+    </div>
+    {% endif %}
+    
+  </div>
+</section>

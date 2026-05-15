@@ -1,0 +1,95 @@
+<header class="site-header">
+   <div class="main-wrapper">
+      <div class="header-inner">
+         
+         <!-- KIRI: LOGO -->
+         <a href="{{ '/' | relative_url }}" class="logo">
+            CHORD<span class="logo-accent">TALES</span>
+         </a>
+
+         <!-- TENGAH: SEARCH DESKTOP -->
+         <div class="search-wrapper-desktop">
+            <div class="search-box">
+               <div data-icon="search"></div>
+               <input type="text" id="search-input-desktop" placeholder="Cari lagu, artis..." autocomplete="off">
+               <div id="search-results-desktop" class="search-results"></div>
+            </div>
+         </div>
+
+         <!-- KANAN: ACTIONS -->
+         <div class="header-actions">
+            
+            <!-- Tombol Search Mobile -->
+            <button class="action-btn mobile-only" id="search-toggle" aria-label="Search">
+               <div data-icon="search"></div>
+            </button>
+
+            <!-- Tombol Theme -->
+            <button class="action-btn" id="theme-toggle" aria-label="Toggle Theme">
+               <div data-icon="sun" class="icon-sun"></div>
+               <div data-icon="moon" class="icon-moon"></div>
+            </button>
+
+            <!-- Garis Pemisah -->
+            <div class="action-divider"></div>
+
+            <!-- Tombol Request Desktop -->
+            <a href="/request" class="btn-request desktop-only">
+               <div data-icon="plus"></div>
+               <span>Request</span>
+            </a>
+
+            <!-- Tombol Hamburger Mobile -->
+            <button class="action-btn mobile-only" id="menu-toggle" aria-label="Menu">
+               <div data-icon="hamburger"></div>
+            </button>
+         </div>
+      </div>
+   </div>
+
+   <!-- SLIDEDOWN SEARCH MOBILE - FIXED -->
+   <div class="search-slidedown" id="search-slidedown">
+      <div class="search-slidedown-inner">
+         <div class="search-box">
+            <div data-icon="search"></div>
+            <input type="text" id="search-input-mobile" placeholder="Cari lagu, artis..." autocomplete="off">
+         </div>
+         <a href="/request" class="request-trigger">
+            <div data-icon="plus"></div>
+            <span>Request Chord Lagu</span>
+         </a>
+         <div id="search-results-mobile" class="search-results"></div>
+      </div>
+   </div>
+</header>
+
+<!-- SIDEBAR MOBILE -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<aside class="sidebar" id="sidebar">
+   <div class="sidebar-header">
+      <span class="logo">CHORD<span class="logo-accent">TALES</span></span>
+      <button class="action-btn" id="sidebar-close">
+         <div data-icon="x"></div>
+      </button>
+   </div>
+   <nav class="sidebar-nav">
+      <a href="{{ '/' | relative_url }}" class="nav-link active">
+         <div data-icon="home"></div>
+         <span>Beranda</span>
+      </a>
+      <div class="nav-dropdown">
+         <button class="nav-link" id="kategori-toggle">
+            <div data-icon="kategori"></div>
+            <span>Kategori</span>
+            <div data-icon="chevron-down" class="dropdown-arrow"></div>
+         </button>
+         <div class="dropdown-content" id="kategori-content">
+            {% include inc-default/genre-nav.html %}
+         </div>
+      </div>
+      <a href="/request" class="nav-link">
+         <div data-icon="plus"></div>
+         <span>Request Chord</span>
+      </a>
+   </nav>
+</aside>

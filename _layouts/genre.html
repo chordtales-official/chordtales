@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+{% assign genre_slug = page.title | downcase | slugify %}
+{% assign current_genre = site.data.genres | where: "name", genre_slug | first %}
+
+<div class="main-wrapper genre-page">
+   <div class="page-header">
+      <h1 class="page-title">
+        {% if current_genre.icon %}
+        <div data-icon="{{ current_genre.icon }}"></div>
+        {% endif %}
+        Genre: {{ page.title | upcase }}
+      </h1>
+   </div>
+
+   {% if paginator.posts.size > 0 %}
+      <div class="post-count">{{ paginator.total_posts }} Lirik & Chord Tersedia</div>
+
+      <div class="post-list">
+         {% for post in paginator.posts %}
+            <article class="post-item">
+               <a href="{{ post.url | relative_url }}">
+                  <div class="post-content">
+                     <h2 class="post-title">{{ post.title }}</h2>
+                     <div class="post-meta">
+                        <div data-icon="mic"></div>
+                        <span>{{ post.artist | default: "Various Artist" }}</span>
+                     </div>
+                  </div>
+                  <div data-icon="chevron-down" class="post-chevron"></div>
+               </a>
+            </article>
+         {% endfor %}
+      </div>
+
+      <!-- PAGINATION CONTROLS -->
+      {% if paginator.total_pages > 1 %}
+      <nav class="pagination">
+         {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="page-btn">
+              <div data-icon="prev"></div>
+              Prev
+            </a>
+         {% endif %}
+
+         <span class="page-info">Halaman {{ paginator.page }} dari {{ paginator.total_pages }}</span>
+
+         {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="page-btn">
+              Next
+              <div data-icon="next"></div>
+            </a>
+         {% endif %}
+      </nav>
+      {% endif %}
+
+      {% else %}
+      <div class="empty-state">
+        <h3>Upss...Sorry!<br>Belum ada Chord di Genre {{ page.title | upcase }}</h3>
+         <p>Coba cek genre lain atau request chord favoritmu.</p>
+         <a href="{{ '/' | relative_url }}" class="btn-back">Kembali ke Beranda</a>
+      </div>
+   {% endif %}
+</div>

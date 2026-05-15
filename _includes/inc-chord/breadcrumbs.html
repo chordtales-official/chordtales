@@ -1,0 +1,22 @@
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">
+        <div data-icon="home"></div> 
+        Beranda
+    </a>
+    
+    <span class="separator">|</span>
+    <a href="/daftar-chords/">Chord</a>
+    
+    {% if page.artist and page.collection == 'chords' %}
+        {% assign main_artist = page.artist | split: "|" | first | strip %}
+        <span class="separator">|</span>
+        <span class="breadcrumb-artist" title="{{ main_artist }}">
+            {{ main_artist | truncate: 20, "" }}
+        </span>
+    {% endif %}
+    
+    {% if page.title %}
+        <span class="separator">•</span>
+        <span aria-current="page">{{ page.title | truncate: 30, "..." }}</span>
+    {% endif %}
+</nav>

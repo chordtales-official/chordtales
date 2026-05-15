@@ -1,0 +1,15 @@
+---
+layout: null
+---
+[
+  {% assign sorted_chords = site.chords | sort: 'date' | reverse %}
+  {% for chord in sorted_chords %}
+  {
+    "title": {{ chord.title | jsonify }},
+    "artist": {{ chord.artist | jsonify }},
+    "genre": {{ chord.genre | jsonify }},
+    "url": {{ chord.url | relative_url | jsonify }},
+    "date": {{ chord.date | date_to_xmlschema | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

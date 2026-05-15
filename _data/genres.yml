@@ -1,0 +1,40 @@
+# _data/genres.yml
+- name: rock
+  title: Rock
+  icon: rock
+
+- name: pop
+  title: Pop
+  icon: pop
+
+- name: jawapop
+  title: Jawa Pop
+  icon: mic
+
+- name: reggae
+  title: Reggae
+  icon: reggae
+
+- name: indie
+  title: Indie
+  icon: indie
+
+- name: folk
+  title: Folk
+  icon: folk
+  
+- name: blues
+  title: blues
+  icon: blues
+  
+- name: memories
+  title: memories
+  icon: memories
+  
+- name: dangdut
+  title: dangdut
+  icon: dangdut
+  
+- name: lainnya
+  title: Lainnya
+  icon: lainnya

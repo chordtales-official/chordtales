@@ -1,0 +1,98 @@
+# --- Identitas Utama ---
+title: "ChordTales"
+email: halo.chordtales@gmail.com
+description: "Pusat kunci gitar dan lirik lagu terlengkap dengan tuner, transpose, chord diagram SVG & autoscroll."
+url: "https://chordtales.com"
+author: "Admin ChordTales"
+baseurl: ""
+default_image: /assets/img/og-chord-default.webp
+social:
+  name: Chordtales
+  links:
+    - https://www.instagram.com/chordtales
+    - https://www.facebook.com/ChordTales
+
+# --- SEO SAKTI ---
+permalink: pretty
+future: false
+lang: id_ID
+timezone: Asia/Jakarta
+markdown: kramdown
+highlighter: rouge
+
+# --- Koleksi Chord = Database ---
+collections:
+  chords:
+    output: true
+    permalink: /chord/:title/
+  rekomendasi:
+    output: true
+    permalink: /rekomendasi/:name/
+
+# --- Build Settings ---
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .jekyll-metadata
+  - vendor/
+  - node_modules/
+  - README.md
+
+# --- Plugins ---
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-minifier
+
+# --- Setting Minifier ---
+jekyll-minifier:
+  compress_css: true
+  compress_javascript: true
+  compress_html:
+    clippings: all
+    comments: all
+
+# --- Pagination ---
+pagination:
+  enabled: true
+  collection: 'chords'
+  per_page: 20
+  permalink: '/page/:num/'
+  title: ':title - Halaman :num'
+  sort_field: 'date'
+  sort_reverse: true 
+  debug: false
+
+# --- Default Otomatis (Fixed Alignment) ---
+defaults:
+  - scope:
+      path: ""
+      type: "chords"
+    values:
+      layout: "chord"
+      capo: 0
+      difficulty: "menengah"
+      tuning: "E A D G B E"
+
+  - scope:
+      path: ""
+      type: "rekomendasi"
+    values:
+      layout: "rekomendasi"
+      active: true
+      
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# --- Setting Tambahan ---
+ads_enabled: false
+logo: /assets/img/logo.webp

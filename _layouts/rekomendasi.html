@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<main class="rek-wrapper">
+  <article class="rek-detail">
+    <div class="rek-detail-img">
+      {% if page.gambar %}
+        <img src="/assets/rekomendasi/{{ page.gambar }}" alt="{{ page.title }}" loading="lazy">
+      {% else %}
+        <div class="rek-detail-noimg"><i data-icon="star"></i></div>
+      {% endif %}
+    </div>
+    
+    <div class="rek-detail-body">
+      <h1>{{ page.title }}</h1>
+      <p class="rek-detail-alasan">{{ page.alasan }}</p>
+      <div class="hr"></div>
+      <div class="rek-detail-content">{{ content }}</div>
+      
+      <div class="rek-detail-action">
+        {% if page.active %}
+          <a href="{{ page.link }}" class="rek-btn" rel="sponsored nofollow" target="_blank">
+            Cek Harga di Shopee →
+          </a>
+        {% else %}
+          <a href="{{ page.backup_link | default: '#' }}" class="rek-btn disabled" rel="sponsored nofollow" target="_blank">
+            {% if page.backup_link %}Cari Produk Serupa →{% else %}Stok Habis{% endif %}
+          </a>
+        {% endif %}
+      </div>
+      <small class="rek-disclosure">🪧 Disclosure: Link afiliasi. Chordtales dapat komisi tanpa biaya tambahan untukmu. <br> 🪧 Harga yang tertera bisa berubah sewaktu-waktu.</small>
+    </div>
+  </article>
+</main>
+
+<!-- Schema Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ page.title }}",
+  "image": ["{{ '/assets/rekomendasi/' | append: page.gambar | absolute_url }}"],
+  "description": "{{ page.alasan }} {{ content | strip_html | truncate: 150 }}",
+  "sku": "{{ page.title | slugify }}",
+  "brand": { "@type": "Brand", "name": "Chordtales Rekomendasi" },
+  "offers": {
+    "@type": "Offer",
+    "url": "{% if page.active %}{{ page.link }}{% else %}{{ page.url | absolute_url }}{% endif %}",
+    "priceCurrency": "IDR",
+    "price": "{{ page.harga | default: '199000' }}",
+    "priceValidUntil": "{{ 'now' | date: '%s' | plus: 2592000 | date: '%Y-%m-%d' }}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/{% if page.active %}InStock{% else %}OutOfStock{% endif %}",
+    "seller": { "@type": "Organization", "name": "Shopee" }
+  }
+}
+</script>
