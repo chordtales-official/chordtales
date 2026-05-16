@@ -2,9 +2,9 @@
 title: "ChordTales"
 email: halo.chordtales@gmail.com
 description: "Pusat kunci gitar dan lirik lagu terlengkap dengan tuner, transpose, chord diagram SVG & autoscroll."
-url: "https://chordtales-official.github.io"
+url: "https://chordtales.com"
 author: "Admin ChordTales"
-baseurl: "/chordtales"
+baseurl: ""
 default_image: /assets/img/og-chord-default.webp
 social:
   name: Chordtales
