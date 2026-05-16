@@ -10,6 +10,10 @@ spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-kalih-welasku
 excerpt: "Chord Kalih Welasku Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: [Am, koplo, galau, denny caknan, Kalih Welasku, lagu jawa]
+key: Am
+lyrics: |
+  Anane mung tresno kalih welasku
+  Anane mung iki, sing tak nduweni
 ---
 {% include youtube.html %}
 #### Lirik & Chord Kalih Welasku - Deni Caknan

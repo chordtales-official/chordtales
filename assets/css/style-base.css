@@ -800,3 +800,49 @@
   }
 }
 /* --- SESI 05: LATEST SONGS END --- */
+.eq-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  height: 80px; /* tinggi max bar */
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+.eq-bars span {
+  width: 6px;
+  height: 100%;
+  background: var(--text-muted); /* warna abu-abu kayak di gambar */
+  border-radius: 4px;
+  transform: scaleY(0.2); /* tinggi awal kecil */
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+/* Bikin tiap bar delay beda biar naik turun bergantian */
+.eq-bars span:nth-child(1)  { animation-delay: 0s; }
+.eq-bars span:nth-child(2)  { animation-delay: 0.1s; }
+.eq-bars span:nth-child(3)  { animation-delay: 0.2s; }
+.eq-bars span:nth-child(4)  { animation-delay: 0.3s; }
+.eq-bars span:nth-child(5)  { animation-delay: 0.4s; }
+.eq-bars span:nth-child(6)  { animation-delay: 0.5s; }
+.eq-bars span:nth-child(7)  { animation-delay: 0.6s; }
+.eq-bars span:nth-child(8)  { animation-delay: 0.7s; }
+.eq-bars span:nth-child(9)  { animation-delay: 0.8s; }
+.eq-bars span:nth-child(10) { animation-delay: 0.9s; }
+.eq-bars span:nth-child(11) { animation-delay: 1.0s; }
+.eq-bars span:nth-child(12) { animation-delay: 0.9s; }
+.eq-bars span:nth-child(13) { animation-delay: 0.8s; }
+.eq-bars span:nth-child(14) { animation-delay: 0.7s; }
+.eq-bars span:nth-child(15) { animation-delay: 0.6s; }
+
+/* Keyframe animasi naik turun */
+@keyframes bounce {
+ 0%, 100% {
+    transform: scaleY(0.2);
+  }
+ 50% {
+    transform: scaleY(1);
+  }
+}

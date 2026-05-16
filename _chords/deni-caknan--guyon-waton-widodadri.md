@@ -10,6 +10,11 @@ spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-widodari
 excerpt: "Chord Widodadri Denny Caknan & Guyon Waton, kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: [G, koplo, galau, denny caknan, widodari, lagu jawa, pop jawa]
+key: G
+lyrics: |
+  Tembangan sepeleku
+  Tandha seneng marangmu
+  Karna ku terpuruk sendiri dalam hampa
 ---
 {% include youtube.html %}
 #### Lirik & Chord Widodadri - Deni Caknan

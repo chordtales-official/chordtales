@@ -10,6 +10,11 @@ spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-cundamani
 excerpt: "Chord Cundamani Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [am, koplo, galau, denny caknan, cundamani]
+key: Am
+lyrics: |
+  saben wayah wengi mikirno isi ati
+  opo tenan tresno iki bakal dadi siji
+  mantep anggonku mikir ra ono sitik kuatir
 ---
 {% include youtube.html %}
 #### Lirik & Chord Cundamani - Deni Caknan
@@ -19,7 +24,7 @@ tags: [am, koplo, galau, denny caknan, cundamani]
 Am                G
 saben wayah wengi mikirno isi ati
 F                     G
-opo tenano tresno iki bakal dadi siji
+opo tenan tresno iki bakal dadi siji
 Am                    G
 mantep anggonku mikir ra ono sitik kuatir
 F                       G

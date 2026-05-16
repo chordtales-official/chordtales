@@ -10,6 +10,11 @@ spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-gampil
 excerpt: "Chord Gampil Denny Caknan & Guyon Waton, kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: [G, koplo, galau, denny caknan, guyon maton, gampil, lagu jawa, pop jawa]
+key: G
+lyrics: |
+  tak gemateni
+  ngancani sliramu pas kowe
+  lagi keloro-loro
 ---
 {% include youtube.html %}
 #### Lirik & Chord Gampil - Guyon Maton
