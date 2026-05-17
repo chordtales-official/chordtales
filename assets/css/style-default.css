@@ -363,14 +363,13 @@ h4,p,span,a{line-height:1.7;}
   z-index: 2;
 }
 
-/* INI KUNCINYA: OVERRIDE BUAT MOBILE */
 #search-results-mobile {
-  position: static !important; /* JANGAN ABSOLUTE DI MOBILE */
+  position: static !important;
   width: 100% !important;
   max-height: 280px;
   overflow-y: auto;
   margin-bottom: 12px;
-  background: var(--bg-card); /* KASIH BG BIAR NGE-BOX */
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 6px;

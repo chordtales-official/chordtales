@@ -1,8 +1,8 @@
 {% if site.rekomendasi and site.rekomendasi.size > 0 %}
 <div class="widget-rekomendasi {% if page.layout == 'default' %}landing{% endif %}">
     <div class="widget-header">
-        <h2><div data-icon="shopping" style="margin-top:-4px;"></div> Rekomendasi Gear</h2>
-        <p>Untuk perlengkapan gitarmu, Beli saja di sini.</p>
+        <h2><div data-icon="shopping" style="margin-top:-4px; font-size: 1.2em; margin-right: 6px;"></div> Rekomendasi Gear</h2>
+        <p style="margin-top:10px;">Untuk perlengkapan gitarmu, Beli saja di sini.</p>
     </div>
     <div class="rek-list">
         {% assign sorted_rekomendasi = site.rekomendasi | sort: 'date' | reverse %}
@@ -10,7 +10,13 @@
         <a href="{{ item.url }}" class="rek-card">
             <div class="rek-card-img">
                 {% if item.gambar %}
-                    <img src="/assets/rekomendasi/{{ item.gambar }}" alt="{{ item.title }}" loading="lazy" width="64" height="64">
+                    <img 
+                      src="/assets/rekomendasi/{{ item.gambar }}" 
+                      alt="{{ item.title }}" 
+                      loading="lazy" 
+                      width="200" 
+                      height="200"
+                      style="width: 64px; height: 64px; object-fit: cover;">
                 {% else %}
                 <i data-icon="music"></i>
                 {% endif %}

@@ -6,8 +6,14 @@ layout: default
   <article class="rek-detail">
     <div class="rek-detail-img">
       {% if page.gambar %}
-        <img src="/assets/rekomendasi/{{ page.gambar }}" alt="{{ page.title }}" loading="lazy">
-      {% else %}
+          <img 
+            src="/assets/rekomendasi/{{ page.gambar }}" 
+            width="200" 
+            height="200"
+            style="width: 100%; height: auto;"
+            alt="{{ page.title }}" 
+            loading="lazy">
+        {% else %}
         <div class="rek-detail-noimg"><i data-icon="star"></i></div>
       {% endif %}
     </div>
