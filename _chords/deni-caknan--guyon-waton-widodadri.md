@@ -1,10 +1,10 @@
 ---
-title: "Widodadri"
+title: "Widodadri - Kunci Gitar & Lirik - Nada Dasar G"
 artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
-date: 2026-05-13
-last_modified_at: 2026-05-13
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "zgSfpOOuI6Q"
 spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-widodari

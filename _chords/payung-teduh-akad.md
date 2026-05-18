@@ -1,10 +1,22 @@
 ---
-layout: chord
-title: "Akad"
+title: "Akad • Kunci Gitar & Lirik - Nada adasar C"
 artist: "Payung Teduh"
-category: "Indie"
-date: 2026-04-17
+genre: "Indie"
+category: indie
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "viW0M5R2BLo"
+spotify_url: ""
+slug: payung-teduh-Akad
+excerpt: "Chord Akad Payung Teduh kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [folk, Payung Teduh, Akad, indie, pop]
+key: C
+lyrics: |
+  betapa bahagianya 
+  hatiku saat 
+  ku duduk berdua denganmu
 ---
+{% include youtube.html %}
 #### Lirik & Chord Akad | Payung Teduh
 [INTRO] Am  D  Am  D
         Am  D  G

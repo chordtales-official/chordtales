@@ -1,10 +1,22 @@
 ---
-layout: chord
-title: "Separuh Aku"
+title: "Separuh Aku • Noah Kunci Gitar & Lirik - Nada adasar Am"
 artist: "Noah"
-category: "Pop"
-date: 2026-04-17
+genre: "Pop"
+category: Pop
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "b0ZBBjViV8Y"
+spotify_url: ""
+slug: noah-Separuh Aku
+excerpt: "Chord Separuh Aku Noah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [Pop, Noah, Separuh Aku, pop indo]
+key: Am
+lyrics: |
+  Dan terjadi lagi 
+  Kisah lama yang terulang kembali 
+  Kau terluka lagi
 ---
+{% include youtube.html %}
 #### Lirik & Chord Separuh Aku | NOAH
 **[INTRO]** C Am G-C G-C Dm F [2x]
 

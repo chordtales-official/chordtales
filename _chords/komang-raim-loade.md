@@ -1,10 +1,21 @@
 ---
-layout: chord
-title: "Komang"
-artist: "Raim Laode"
-category: "Pop"
-date: 2026-04-17
+title: "Komang - Raim Loade | Kunci Dasar G"
+artist: "Raim Loade"
+genre: "Folk"
+category: folk
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "fKRtnMYMW08"
+spotify_url: ""
+slug: raim-loade-Komang
+excerpt: "Chord Komang Raim Loade kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
+tags: [folk, pop, Raim Loade, Komang, pop hits, lagu trend]
+key: G
+lyrics: |
+  dari kejauhan tergambar cerita tentang kita
+  terpisah jarak dan waktu
 ---
+{% include youtube.html %}
 #### Lirik & Chord Komang | Raim Laode
 **[INTRO]**
 G D Am C Cm

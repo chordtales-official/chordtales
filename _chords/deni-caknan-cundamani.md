@@ -1,12 +1,12 @@
 ---
-title: "Cundamani"
+title: "Cundamani - Kunci Gitar & Lirik - Nada Dasar Am"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
-date: 2026-04-23 10:00:00 +0700
-last_modified_at: 2026-04-23 10:00:00 +0700
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "X5u1eu2Sqts"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: denny-caknan-cundamani
 excerpt: "Chord Cundamani Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [am, koplo, galau, denny caknan, cundamani]

@@ -1,11 +1,23 @@
 ---
-layout: chord
-title: "Sesuatu di Jogja"
+title: "Sesuatu Di Jogja • Kunci Gitar & Lirik - Nada adasar C"
 artist: "Adhitia Sofyan"
-category: "Pop"
-date: 2026-04-17
+genre: "Folk"
+category: Folk
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "l2mI4vL95kU"
+spotify_url: ""
+slug: adhitia-sofyan-Sesuatu Di Jogja
+excerpt: "Chord Sesuatu Di Jogja Adhitia Sofyan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [Folk Indo, Adhitia Sofyan, Sesuatu Di Jogja, Indie]
+key: C
+lyrics: |
+  Hey cantik coba kau catat 
+  Keretaku tiba pukul empat sore 
+  Tak usah kau tanya
 ---
-#### Lirik & Chord Sesuatu di Jogja | Adhitia Sofyan
+{% include youtube.html %}
+#### Sesuatu di Jogja | Adhitia Sofyan
 **[INTRO]** C F C F
 
 **[VERSE 1]**

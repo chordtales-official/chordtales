@@ -1,14 +1,19 @@
 ---
-title: "Kangen"
+title: "Kangen - Kunci Gitar & Lirik - Nada Dasar C"
 artist: "Dewa 19"
 genre: "Rock"
 category: rock
-date: 2026-04-23
-last_modified_at: 2026-04-23
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "YKK5_OQiEa4"
 slug: dewa-19-Kangen
 excerpt: "Chord Kangen Dewa 19 kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, pop, rock, Dewa 19, Kangen, pop 90, lagu lawas, Dewa 19]
+key: C
+lyrics: |
+  kutrima suratmu 
+  tlah ku baca 
+  dan aku mengerti
 ---
 {% include youtube.html %}
 #### Lirik & Chord Dewa19 | Kangen

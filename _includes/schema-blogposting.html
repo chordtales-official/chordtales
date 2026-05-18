@@ -8,10 +8,11 @@
     "name": "{{ page.artist | split: '|' | first | strip | escape }}"
   },
   "lyrics": {
-  "@type": "CreativeWork",
-  "text": "{{ page.lyrics | strip_newlines | strip_html | escape }}"
+    "@type": "CreativeWork",
+    "text": "{{ page.lyrics | strip_newlines | escape }}",
+    "inLanguage": "id"
   },
-  "musicalKey": "{{ page.key | default: page.tags[0] | escape }}",
+  "musicalKey": "{{ page.key | escape }}",
   "genre": "{{ page.genre | escape }}",
   "keywords": "{{ page.tags | join: ', ' }}",
   "mainEntityOfPage": {

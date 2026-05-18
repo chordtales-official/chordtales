@@ -1,15 +1,20 @@
 ---
-title: "Hampa"
+title: "Hampa - Kunci Gitar & Lirik - Nada Dasar C"
 artist: "Ari Lasso"
 genre: "Pop"
 category: pop
-date: 2026-04-23
-last_modified_at: 2026-04-23
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "fQ3H3U6MzSE"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: ari-lasso-Hampa
 excerpt: "Chord Hampa Ari Lasso kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, pop, rock, Ari Lasso, Hampa, pop 90, lagu lawas, Dewa 19]
+key: C
+lyrics: |
+  Kupejamkan mata ini, Mencoba tuk melupakan
+  Segala kenangan indah Tentang dirimu
+  Tentang mimpiku
 ---
 {% include youtube.html %}
 #### Lirik & Chord Ari Lasso | Hampa

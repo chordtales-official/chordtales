@@ -1,14 +1,19 @@
 ---
-title: "Pamer Bojo"
+title: "Pamer Bojo - Kunci Gitar & Lirik - Nada Dasar C"
 artist: "Didi Kempot"
 genre: "Dangdut"
 category: dangdut
-date: 2026-04-23
-last_modified_at: 2026-04-23
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "Xo9egupmgoE"
 slug: didi-kempot-pamer-bojo
 excerpt: "Chord Pamer Bojo Didi Kempot kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, koplo, Dangdut, Didi Kempot, Pamer Bojo, koplo, dangdut koplo, Didi Kempot]
+key: C
+lyrics: |
+  Koyo ngene
+  rasane wong nandang kangen
+  rino wengi atiku rasane peteng
 ---
 {% include youtube.html %}
 #### Lirik & Chord Pamer Bojo | Didi Kempot
@@ -19,8 +24,8 @@ tags: [C, koplo, Dangdut, Didi Kempot, Pamer Bojo, koplo, dangdut koplo, Didi Ke
 **[VERSE 1]**
         C
 Koyo ngene
-       F                C
-rasane wong nandang Pamer Bojo
+       F              C
+rasane wong nandang kangen
        Am                 Em
 rino wengi atiku rasane peteng
 F             G
@@ -94,7 +99,7 @@ nganti seprene suwene aku ngenteni
 F            G
 nangis batinku
    Em         Am
-nggrantes uripku
+ngrantes uripku
       F             G
 teles kebes netes eluh
          C

@@ -1,10 +1,10 @@
 ---
-title: "Sanes"
+title: "Sanes • Kunci Gitar Mudah Untuk Pemula"
 artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
-date: 2026-04-23
-last_modified_at: 2026-04-23
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "_1UlylSfSTk"
 spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-sanes

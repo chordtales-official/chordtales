@@ -1,12 +1,12 @@
 ---
-title: "Kalih Welasku"
+title: "Kalih Welasku - Kunci Gitar & Lirik - Nada Dasar"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
-date: 2026-05-14
-last_modified_at: 2026-05-14
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "c8M9ZWt1ipw"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: denny-caknan-kalih-welasku
 excerpt: "Chord Kalih Welasku Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: [Am, koplo, galau, denny caknan, Kalih Welasku, lagu jawa]

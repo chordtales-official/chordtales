@@ -3,13 +3,19 @@
   max-width: 1000px;
   margin: auto;
   position: relative;
-  height: 75vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 80px 20px 60px;
   overflow: hidden;
   isolation: isolate;
+}
+
+@media(max-width: 500px){
+    .hero{
+        height: 60px;
+    }
 }
 
 /* Background gambar + opacity lembut */
@@ -47,6 +53,11 @@
   letter-spacing: -1px;
   margin-bottom: 16px;
   line-height: 1.1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hero-accent {
@@ -373,6 +384,10 @@
 
 .genre-cards h3{
     text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .genre-cards p{
@@ -427,6 +442,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
 }
 
 .page-title [data-icon] {
@@ -474,6 +493,9 @@
   border-color: var(--accent-1);
   transform: translateX(4px);
 }
+.post-item:hover .post-title{
+    color: var(--accent-1);
+}
 
 .post-item a {
   display: flex;
@@ -491,12 +513,12 @@
 }
 
 .post-item .post-title {
+  width: 96%;
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 4px;
   color: var(--text-main);
   line-height: 1.3;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -672,14 +694,15 @@
 }
 
 .post-card {
-  background: var(--bg-card);
+  background: var(--bg-container);
   border: 1px solid var(--border-color);
-  border-radius: 14px;
+  border-radius: 8px;
   transition: all 0.2s ease;
   overflow: hidden;
 }
 
 .post-card:hover {
+    background: var(--bg-card);
   border-color: var(--accent-1);
   transform: translateY(-2px);
   box-shadow: var(--shadow);
@@ -688,7 +711,7 @@
 .post-card a {
   display: block;
   color: var(--text-main);
-  padding: 10px 14px;
+  padding: 8px 14px;
 }
 
 .post-card-header {
@@ -696,7 +719,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 8px;
 }
 
 .post-meta {
@@ -710,15 +732,17 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 90%;
 }
 .post-meta p{
     margin: 0;
+    color: var(--text-muted);
 }
 
 .post-date {
   font-size: 0.8rem;
   color: var(--text-muted);
-  background: var(--bg-body);
+  border: 1px solid var(--border-color);
   padding: 3px 8px;
   border-radius: 6px;
   flex-shrink: 0;
@@ -732,17 +756,19 @@
   margin: 0;
   color: var(--text-main);
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85%;
 }
-
+/*
 .post-title span{
     color: var(--text-muted);
-}
+}*/
 
 .post-card:hover .post-title {
-  color: var(--text-muted);
+  color: var(--accent-1);
 }
 .post-card:hover .post-title span{
   color: var(--accent-1);
@@ -781,12 +807,18 @@
     gap: 12px;
   }
   .post-card a {
-    padding: 16px 18px;
+    padding: 8px 14px;
   }
   .btn-more {
     width: 100%;
     justify-content: center;
   }
+}
+@media(min-width: 900px){
+    .sidebar-chord .post-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 }
 /* --- SESI 05: LATEST SONGS END --- */
 .eq-bars {
@@ -794,7 +826,7 @@
   align-items: flex-end;
   justify-content: center;
   gap: 4px;
-  height: 80px; /* tinggi max bar */
+  height: 80px;
   width: 100%;
   overflow: hidden;
   opacity: 0.2;
@@ -803,13 +835,12 @@
 .eq-bars span {
   width: 6px;
   height: 100%;
-  background: var(--text-muted); /* warna abu-abu kayak di gambar */
+  background: var(--text-muted);
   border-radius: 4px;
-  transform: scaleY(0.2); /* tinggi awal kecil */
+  transform: scaleY(0.2);
   animation: bounce 1.2s ease-in-out infinite;
 }
 
-/* Bikin tiap bar delay beda biar naik turun bergantian */
 .eq-bars span:nth-child(1)  { animation-delay: 0s; }
 .eq-bars span:nth-child(2)  { animation-delay: 0.1s; }
 .eq-bars span:nth-child(3)  { animation-delay: 0.2s; }
@@ -826,7 +857,6 @@
 .eq-bars span:nth-child(14) { animation-delay: 0.7s; }
 .eq-bars span:nth-child(15) { animation-delay: 0.6s; }
 
-/* Keyframe animasi naik turun */
 @keyframes bounce {
  0%, 100% {
     transform: scaleY(0.2);

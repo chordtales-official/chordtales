@@ -1,15 +1,20 @@
 ---
-title: "Wirang"
+title: "Wirang - Kunci Gitar & Lirik - Nada Dasar C"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
-date: 2026-04-23
-last_modified_at: 2026-04-23
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "KxfMtTLYXds"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: denny-caknan-wirang
 excerpt: "Chord Wirang Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, koplo, galau, denny caknan, Wirang, pop, jawa]
+key: C
+lyrics: |
+  sah...jam 11 bengi aku mbok tinggalno
+  mbok tolak tanpo sebab sing pasti
+  nglarani...
 ---
 {% include youtube.html %}
 #### Lirik & Chord Wirang - Deni Caknan

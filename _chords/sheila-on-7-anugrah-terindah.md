@@ -1,10 +1,22 @@
 ---
-layout: chord
-title: "Anugrah Terindah"
-artist: "Sheila on 7"
-category: "Pop"
-date: 2026-04-17
+title: "Anugrah Terindah • Kunci Gitar & Lirik - Nada adasar G"
+artist: "Sheila On 7"
+genre: "Pop"
+category: pop
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "wUiOtiJ09-o"
+spotify_url: ""
+slug: sheila-on-7-anugrah-terindah
+excerpt: "Chord Anugrah Terindah Sheila On 7 kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [Pop Indo, Sheila On 7, Anugrah Terindah, Indie, pop 90an, lawas]
+key: G
+lyrics: |
+  Melihat tawamu,
+  Mendengar senandungmu,
+  Terlihat jelas di mataku
 ---
+{% include youtube.html %}
 #### Lirik & Chord Sephia | Sheila On 7
 [INTRO] G C G C
 

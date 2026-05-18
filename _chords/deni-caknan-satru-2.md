@@ -1,18 +1,22 @@
 ---
-title: "Satru 2"
+title: "Satru 2 - Kunci Gitar & Lirik - Nada Dasar"
 artist: "Denny Caknan | Happy Asmara"
 genre: "JawaPop"
 category: jawapop
-date: 2026-05-14
-last_modified_at: 2026-05-14
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "rEjSkBl47OY"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: denny-caknan-Satru-2
 excerpt: "Chord Satru 2 Denny Caknan & Happy Asmara kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: [Am, koplo, galau, denny caknan, happy asmara, Satru 2, lagu jawa]
+key: Am
+lyrics: |
+  Wis tak pupuk winihe kateresnanku
+  Kanggo awakmu..(kanggo awakmu)...
+  Dungoku tukul lemu urip ayem
 ---
 {% include youtube.html %}
-
 **Intro :** F G Em Am | F G Am
 
 **Verse :**

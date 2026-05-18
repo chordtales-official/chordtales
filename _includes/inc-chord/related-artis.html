@@ -3,7 +3,7 @@
     {% assign main_artist = page.artist | split: "|" | first | strip %}
     {% assign all_related = site.chords | where_exp: "item", "item.artist contains main_artist" | where_exp: "item", "item.url != page.url" | sort: "date" | reverse %}
     
-    <h2 class="widget-title"><div data-icon="lainnya"></div> Lainnya Dari {{ main_artist }} </h2>
+    <h2 class="widget-title"><div data-icon="lainnya"style="margin-top:-4px; margin-right: 6px; font-size: 1.2em;"></div> Lainnya Dari {{ main_artist }} </h2>
     <ul class="related-list">
         {% for lagu in all_related limit: 10 %}
         <li>

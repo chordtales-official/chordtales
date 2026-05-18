@@ -50,6 +50,7 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
     font-weight: normal;
     overflow-x: hidden;
+    position: relative;
 }
 
 [data-icon] {

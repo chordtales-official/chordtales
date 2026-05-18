@@ -1,15 +1,20 @@
 ---
-title: "Sugeng Dalu"
+title: "Sugeng Dalu - Kunci Gitar & Lirik - Nada Dasar C"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
-date: 2026-04-23
-last_modified_at: 2026-04-23
+date: 2026-05-18
+last_modified_at: 2026-05-18
 youtube_id: "W1e1ZZidrAg"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: denny-caknan-sugeng-dalu
 excerpt: "Chord Sugeng Dalu Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, koplo, galau, denny caknan, Sugeng Dalu, pop, jawa]
+key: C
+lyrics: |
+  Sugeng dalu, Ati sing biyen tau ngelarani
+  Wis suwe we ra rene
+  We lungo mung masalah sepele
 ---
 {% include youtube.html %}
 #### Lirik & Chord Sugeng Dalu - Deni Caknan

@@ -1,12 +1,23 @@
 ---
-layout: chord
-title: "Keranda Cinta"
+title: "Keranda Cinta • Kunci Gitar & Lirik - Nada adasar Am"
 artist: "Noer Halimah"
-category: "Dangdut"
-date: 2026-04-22
+genre: "Dangdut"
+category: dangdut
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "7hRzocep0Z4"
+spotify_url: ""
+slug: noer-halimah-Keranda Cinta
+excerpt: "Chord Keranda Cinta Noer Halimah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [Dangdut Koplo, Noer Halimah, Keranda Cinta, Dangdut, Rhoma Irama]
+key: Am
+lyrics: |
+  Kelamnya malam, lukisan cintaku 
+  Penuh cerita yang kelabu 
+  Walaupun telah lama hanyut ditelan masa
 ---
+{% include youtube.html %}
 #### Lirik & Chord Keranda Cinta - Noer Halimah
-::v Am | Nada dasar [Am] Metronome active tempo 110 BPM membuat genjrengan stabil::
 **Intro :** Am F E Am G
         Am F Am
         Em F Em Am
@@ -66,5 +77,3 @@ F       E           Am
 Abadi terpendam di jiwa
 
 **Outro :** Am F G Am (2x)
-#### Salam genjreng...
-::v Am | Nada dasar [Am]. | Silahkan transpose nada untuk menyesuaikan vokal. ::

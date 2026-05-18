@@ -1,10 +1,22 @@
 ---
-layout: chord
-title: "Sephia"
-artist: "Sheila on 7"
-category: "Pop"
-date: 2026-04-17
+title: "Sephia • Kunci Gitar & Lirik - Nada adasar Am"
+artist: "Sheila On 7"
+genre: "Pop"
+category: pop
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "4tAg2H7tqD0"
+spotify_url: ""
+slug: sheila-on-7-sephia
+excerpt: "Chord Sephia Sheila On 7 kunci gitar asli Sephia lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [Pop Indo, Sheila On 7, Sephia, Indie, pop 90an, lawas]
+key: Am
+lyrics: |
+  hey sephia,
+  malam ini ku takkan datang,
+  mencoba berpaling sayang
 ---
+{% include youtube.html %}
 #### Lirik & Chord Sephia | Sheila On 7
 **[INTRO]** Am
 

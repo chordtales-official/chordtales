@@ -1,10 +1,22 @@
 ---
-layout: chord
-title: "Bertaut"
+title: "Bertaut • Kunci Gitar & Lirik - Nada adasar C"
 artist: "Nadin Amizah"
-category: "Folk"
-date: 2026-04-17
+genre: "Folk"
+category: folk
+date: 2026-05-18
+last_modified_at: 2026-05-18
+youtube_id: "HyhLsy6b0XI"
+spotify_url: ""
+slug: nadin-amizah-bertAut
+excerpt: "Chord Bertaut Nadin Amizah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+tags: [folk, Nadin Amizah, Bertaut, indie, pop]
+key: C
+lyrics: |
+  bun, hidup berjalan seperti bajingan
+  seperti landak yang tak punya teman
+  ia menggonggong bak suara hujan
 ---
+{% include youtube.html %}
 #### Lirik & Chord Nadin Amizah | Bertaut
 **[INTRO]** C  Em  Am
         F  Fm  C
