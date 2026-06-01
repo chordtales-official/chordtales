@@ -6,7 +6,6 @@ category: folk
 date: 2026-05-18
 last_modified_at: 2026-05-18
 youtube_id: "HyhLsy6b0XI"
-spotify_url: ""
 slug: nadin-amizah-bertAut
 excerpt: "Chord Bertaut Nadin Amizah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [folk, Nadin Amizah, Bertaut, indie, pop]

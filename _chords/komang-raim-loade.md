@@ -6,7 +6,6 @@ category: folk
 date: 2026-05-18
 last_modified_at: 2026-05-18
 youtube_id: "fKRtnMYMW08"
-spotify_url: ""
 slug: raim-loade-Komang
 excerpt: "Chord Komang Raim Loade kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: [folk, pop, Raim Loade, Komang, pop hits, lagu trend]
