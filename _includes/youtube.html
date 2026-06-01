@@ -1,8 +1,29 @@
-{% if include.id or page.youtube_id %}
-<div class="youtube-embed">
-  <a href="https://www.youtube.com/watch?v={{ include.id | default: page.youtube_id }}" target="_blank" rel="noopener">
-    <img src="https://img.youtube.com/vi/{{ include.id | default: page.youtube_id }}/hqdefault.jpg" alt="Tonton di YouTube" />
-    <div class="play-button">▶</div>
-  </a>
+{% assign vid_id = include.id | default: page.youtube_id | strip %}
+
+{% if vid_id %}
+<div class="youtube-embed" data-id="{{ vid_id }}" onclick="loadYouTubeVideo(this)">
+  <!-- Thumbnail -->
+  <img src="https://img.youtube.com/vi/{{ vid_id }}/hqdefault.jpg" alt="Tonton Video" loading="lazy" />
+  
+  <!-- Tombol Play -->
+  <div class="play-button"><div data-icon="play"></div></div>
 </div>
 {% endif %}
+<script>
+function loadYouTubeVideo(element) {
+  // Ambil ID video dari atribut data-id
+  const videoId = element.getAttribute('data-id');
+  
+  const iframe = document.createElement('iframe');
+  
+  iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+  iframe.setAttribute('allowfullscreen', 'true');
+  
+  element.innerHTML = '';
+  element.appendChild(iframe);
+  element.removeAttribute('onclick');
+  element.style.cursor = 'default';
+}
+</script>

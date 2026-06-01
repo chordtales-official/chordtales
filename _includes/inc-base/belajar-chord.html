@@ -1,0 +1,112 @@
+<style>
+.chord-learn {
+  padding: 40px 0;
+}
+
+.chord-learn h2 {
+  color: var(--text-main);
+  margin-bottom: 24px;
+}
+
+.chord-family {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: var(--bg-card);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.chord-family:hover {
+  transform: translateY(-2px);
+}
+
+.family-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: none;
+  color: var(--text-main);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.family-header:hover {
+  background: var(--border-color);
+}
+
+.family-header .arrow {
+  transition: transform 0.3s;
+  color: var(--accent-1);
+}
+
+.family-header.active .arrow {
+  transform: rotate(180deg);
+}
+
+.family-content {
+  display: none;
+  padding: 16px;
+  background: var(--bg-container);
+}
+
+.family-content.show {
+  display: block;
+}
+
+.chord-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+
+.chord-card {
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--card-text);
+}
+
+.chord-card:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.chord-name {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+</style>
+<div class="main-wrapper">
+  <section id="belajar-chord" class="chord-learn">
+    <div class="container">
+      <h2><div data-icon="diagram" style="margin-top: -4px; font-size: 1.2em; color: var(--text-muted); margin-right: 6px;"></div>Belajar Chord</h2>
+
+      <div class="chord-families">
+        {% assign families = "C,C#,D,D#,E,Eb,F#,G,G#,A,Ab,A#,B,Bb" | split: "," %}
+
+        {% for root in families %}
+          <div class="chord-family" data-family="{{ root }}">
+            <button class="family-header">
+              <span>Belajar Chord {{ root }}</span>
+              <span class="arrow">▼</span>
+            </button>
+
+            <div class="family-content">
+              <div class="chord-grid" id="grid-{{ root | replace: '#', 's' | replace: 'b', 'f' }}">
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

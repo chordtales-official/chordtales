@@ -1,15 +1,15 @@
 ---
-title: "Sanes • Kunci Gitar Mudah Untuk Pemula"
+title: "Kunci Gitar Sanes - Denny Caknan Feat.Guyon Waton"
 artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-01
 youtube_id: "_1UlylSfSTk"
-spotify_url: "https://open.spotify.com/track/..."
+spotify_url: ""
 slug: denny-caknan-sanes
 excerpt: "Chord Sanes Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
-tags: [C, koplo, galau, denny caknan, guyon waton, sanes]
+tags: ['C', 'koplo', 'galau', 'denny caknan', 'guyon maton', 'sanes', 'lagu jawa', 'pop jawa']
 key: C
 lyrics: |
   opo kowe ra ngerti larane

@@ -1,5 +1,5 @@
 ---
-title: "Dan • Kunci Gitar & Lirik - Nada adasar F"
+title: "Kunci Gitar Dan - Sheila-On7 chordtales.com"
 artist: "Sheila On 7"
 genre: "Pop"
 category: pop

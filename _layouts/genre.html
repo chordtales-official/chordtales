@@ -18,12 +18,16 @@ layout: default
    {% if paginator.posts.size > 0 %}
       <div class="post-count">{{ paginator.total_posts }} Lirik & Chord Tersedia</div>
 
+      {% assign sorted_posts = paginator.posts | sort: 'title' %}
+
       <div class="post-list">
-         {% for post in paginator.posts %}
+         {% for post in sorted_posts %}
             <article class="post-item">
                <a href="{{ post.url | relative_url }}">
                   <div class="post-content">
-                     <h2 class="post-title">{{ post.title }}</h2>
+                     <h3 class="post-title">
+                       {{ post.title | replace: "Kunci Gitar ", "" }}
+                      </h3>
                      <div class="post-meta">
                         <div data-icon="mic"></div>
                         <span>{{ post.artist | default: "Various Artist" }}</span>

@@ -65,8 +65,8 @@ pagination:
   per_page: 20
   permalink: '/page/:num/'
   title: ':title - Halaman :num'
-  sort_field: 'date'
-  sort_reverse: true 
+  sort_field: 'title'
+  sort_reverse: false
   debug: false
 
 # --- Default Otomatis (Fixed Alignment) ---
@@ -79,6 +79,7 @@ defaults:
       capo: 0
       difficulty: "menengah"
       tuning: "E A D G B E"
+      embed: true
 
   - scope:
       path: ""

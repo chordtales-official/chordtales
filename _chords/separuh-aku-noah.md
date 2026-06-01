@@ -1,5 +1,5 @@
 ---
-title: "Separuh Aku • Noah Kunci Gitar & Lirik - Nada adasar Am"
+title: "Kunci Gitar Separuh Aku - Noah Chord Mudah"
 artist: "Noah"
 genre: "Pop"
 category: Pop
@@ -7,7 +7,7 @@ date: 2026-05-18
 last_modified_at: 2026-05-18
 youtube_id: "b0ZBBjViV8Y"
 spotify_url: ""
-slug: noah-Separuh Aku
+slug: noah-separuh-aku
 excerpt: "Chord Separuh Aku Noah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [Pop, Noah, Separuh Aku, pop indo]
 key: Am
@@ -31,9 +31,9 @@ Kau terluka lagi
 Dari cinta rumit yang kau jalani
 
 **[PRE-CHORUS]**
-      Dm          G
+      Dm      G    Am
 Aku ingin kau merasa
-Am G       C      G         Am
+G       C         G         Am
 Kamu mengerti aku mengerti kamu
       Dm    G     C
 Aku ingin kau sadari

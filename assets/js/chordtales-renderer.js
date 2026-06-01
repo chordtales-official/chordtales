@@ -200,12 +200,19 @@ function renderDynamicChords() {
     const pre = DOM.pre;
     if (!pre) return;
 
-    // Regex utama - dipake buat render di lirik
     const chordRegex = /\b[A-G][b#]?(?:m|maj|min|dim|aug|sus|add|M|°|ø)?(?:\d{1,2})?(?:[b#+-]\d{1,2})*(?:sus[24]?)?(?:\/[A-G][b#]?)?(?!\w)/g;
 
-    pre.innerHTML = originalLyricsHTML.replace(chordRegex, (match) => {
+    const combinedRegex = new RegExp(/(<[^>]+>)/.source + '|' + chordRegex.source, 'g');
+
+    pre.innerHTML = originalLyricsHTML.replace(combinedRegex, (match) => {
+        
+        if (match.startsWith('<')) {
+            return match; 
+        }
+
         const transposed = getTransposedChord(match, appState.transpose);
         const data = chordDbGlobal[transposed] || chordDbGlobal[match];
+        
         if (data) {
             const mini = createChordSVG(transposed, data)
                .replace('width="90"', 'width="60"')
@@ -218,6 +225,7 @@ function renderDynamicChords() {
     initBankChord();
     attachTooltipSafety();
 }
+
 
 function initBankChord() {
     const container = $('#chord-list');
@@ -291,3 +299,4 @@ function attachTooltipSafety() {
     });
 }
 /* --- SESI 06B: CHORD RENDER END --- */
+

@@ -1,0 +1,106 @@
+---
+layout: default
+---
+{% include inc-base/hero-section.html %}
+<div class="artist-wrapper">
+  <div class="artist-header">
+    <h2>Semua Chord {{ page.artist_name }}</h2>
+    <p class="artist-count">{{ site.chords | where_exp:"item","item.artist contains page.artist_name" | size }} Lirik & Chord Bisa Di Mainkan.</p>
+  </div>
+
+  <div class="artist-list">
+    {% assign songs = site.chords | where_exp:"item","item.artist contains page.artist_name" | sort: 'title' %}
+    {% for lagu in songs %}
+      <a href="{{ lagu.url }}" class="song-item">
+        <span class="song-icon" data-icon="pop"></span>
+        <span class="song-title">{{ lagu.title | replace: 'Kunci Gitar', '' | strip }}</span>
+        <span class="song-arow" data-icon="next"></span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.artist-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.artist-wrapper .artist-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.artist-wrapper .artist-header h1 {
+  color: var(--text-main);
+  margin: 0 0 8px 0;
+}
+
+.artist-wrapper .artist-count {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 14px;
+}
+
+.artist-wrapper .artist-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.artist-wrapper .song-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 10px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+  min-width: 0; /* fix overflow */
+}
+
+.artist-wrapper .song-item:hover {
+  border: 1px solid var(--accent-1);
+  transform: translateX(4px);
+  background: var(--bg-container);
+}
+
+.artist-wrapper [data-icon] {
+  flex-shrink: 0;
+  font-size: 1.4em;
+  margin-right: 12px;
+  color: var(--accent-2);
+}
+
+.artist-wrapper .song-title {
+  flex: 1;
+  min-width: 0; /* fix overflow */
+  font-size: 16px;
+  color: var(--text-main);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* bikin ... kalau kepanjangan */
+}
+
+.artist-wrapper [data-icon].song-arow {
+  flex-shrink: 0;
+  margin-right: 0;
+  color: var(--text-muted);
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+/* Responsive: 1 kolom di HP kecil */
+@media (max-width: 600px) {
+  .artist-wrapper .artist-list {
+    grid-template-columns: 1fr;
+  }
+  .artist-wrapper{
+    padding: 20px 10px;
+  }
+}
+</style>

@@ -1,47 +1,63 @@
 <!-- _includes/inc-base/hero-section.html -->
 <section class="hero" id="hero">
-    <div class="main-wrapper">
-        <div class="hero-bg-glow"></div>
-  <!--{% include equalizer-bars.html %}-->
-  <div class="hero-inner">
-    <h1 class="hero-title">
-      CHORD<span class="hero-accent">TALES</span>
-    </h1>
+  <div class="main-wrapper">
+    <div class="hero-bg-glow"></div>
+    
+    <!-- {% include equalizer-bars.html %} -->
+    
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        CHORD<span class="hero-accent">TALES</span>
+      </h1>
+      
+      <p class="hero-tagline">
+        <span class="typing-text" data-words='["Mainkan chord favoritmu. ","Cari lirik & kunci gita lengkap dan mudah. ","Transpose key semaumu. ","Autoscroll biar fokus main. ","Metronome agar genjrengan makin glossy. "]'></span>
+      </p>
 
-    <p class="hero-tagline">
-      <span class="typing-text" data-words='["Mainkan chord favoritmu. ","Cari lirik & kunci gita lengkap dan mudah. ","Transpose key semaumu. ","Autoscroll biar fokus main. ","Metronome agar genjrengan makin glossy. "]'></span>
-    </p>
+      <div class="search-hero">
+        <div class="search-hero-wrap">
+          <span data-icon="search"></span>
+          <input
+            type="text"
+            class="search-input"
+            data-scope="hero"
+            placeholder="Ketik judul lagu,nama artis, atau band.."
+            autocomplete="off"
+          >
+        </div>
+        <div id="search-results-hero" class="search-results-hero"></div>
+      </div>
 
-    <div class="search-hero">
-      <div class="search-hero-wrap">
-        <span data-icon="search"></span>
-        <input
-          type="text"
-          class="search-input"
-          data-scope="hero"
-          placeholder="Ketik judul lagu atau nama artis..."
-          autocomplete="off"
-        >
-      </div>
-      <div id="search-results-hero" class="search-results-hero"></div>
-    </div>
+      {% assign chord_count = site.chords.size %}
+      {% if chord_count == 0 and paginator.collection == 'chords' %}
+        {% assign chord_count = paginator.collection.docs.size %}
+      {% endif %}
 
-    <div class="hero-stats">
-      <div class="stat-item">
-        <strong class="stat-number" data-target="2847">0</strong>
-        <span>Chord</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <strong class="stat-number" data-target="512">0</strong>
-        <span>Artis</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <strong class="stat-number" data-target="24">0</strong>
-        <span>Diagram</span>
+      {% assign artist_count = site.chords | map: 'artist' | uniq | size %}
+      {% if artist_count == 0 and paginator.collection == 'chords' %}
+        {% assign artist_count = paginator.collection.docs | map: 'artist' | uniq | size %}
+      {% endif %}
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <strong class="stat-number" data-target="{{ chord_count }}">0</strong>
+          <span>Chord</span>
+        </div>
+        
+        <div class="stat-divider"></div>
+        
+        <div class="stat-item">
+          <strong class="stat-number" data-target="{{ artist_count }}">0</strong>
+          <span>Artis</span>
+        </div>
+        
+        <div class="stat-divider"></div>
+        
+        <div class="stat-item">
+          <strong class="stat-number" data-target="88">0</strong>
+          <span>Diagram</span>
+        </div>
       </div>
     </div>
   </div>
-    </div>
 </section>

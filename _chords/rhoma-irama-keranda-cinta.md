@@ -1,5 +1,5 @@
 ---
-title: "Keranda Cinta • Kunci Gitar & Lirik - Nada adasar Am"
+title: "Kunci Gitar Keranda Cinta - Noer Halimah"
 artist: "Noer Halimah"
 genre: "Dangdut"
 category: dangdut
@@ -7,7 +7,7 @@ date: 2026-05-18
 last_modified_at: 2026-05-18
 youtube_id: "7hRzocep0Z4"
 spotify_url: ""
-slug: noer-halimah-Keranda Cinta
+slug: noer-halimah-keranda-cinta
 excerpt: "Chord Keranda Cinta Noer Halimah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [Dangdut Koplo, Noer Halimah, Keranda Cinta, Dangdut, Rhoma Irama]
 key: Am

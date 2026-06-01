@@ -1,15 +1,14 @@
 ---
-title: "Gampil - Kunci Gitar & Lirik - Nada Dasar"
+title: "Kunci Gitar Gampil - Denny Caknan Feat Guyon Waton"
 artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-01
 youtube_id: "qmyepgTGcIc"
-spotify_url: ""
 slug: denny-caknan-gampil
 excerpt: "Chord Gampil Denny Caknan & Guyon Waton, kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
-tags: [G, koplo, galau, denny caknan, guyon maton, gampil, lagu jawa, pop jawa]
+tags: ['G', 'koplo', 'galau', 'denny caknan', 'guyon maton', 'gampil', 'lagu jawa', 'pop jawa']
 key: G
 lyrics: |
   tak gemateni

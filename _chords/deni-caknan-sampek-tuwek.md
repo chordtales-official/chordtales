@@ -1,15 +1,15 @@
 ---
-title: "Sampek Tuwek - Kunci Gitar & Lirik - Nada Dasar"
+title: "Kunci Gitar Sampek Tuwek - Denny Caknan - chordtales.com"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-01
 youtube_id: "4Xyu95TEJZ0"
 spotify_url: ""
-slug: denny-caknan-Sampek-Tuwek
+slug: denny-caknan-sampek-tuwek
 excerpt: "Chord Sampek Tuwek Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
-tags: [G, koplo, galau, denny caknan, Sampek Tuwek, lagu jawa]
+tags: ['G', 'koplo', 'galau', 'denny caknan', 'sampek tuwek', 'lagu jawa']
 key: G
 lyrics: |
   seneng, seneng bareng. susah, susah bareng

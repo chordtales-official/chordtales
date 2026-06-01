@@ -1,5 +1,5 @@
 ---
-title: "Komang - Raim Loade | Kunci Dasar G"
+title: "Kunci Gitar Komang - Raim Loade chordtales.com"
 artist: "Raim Loade"
 genre: "Folk"
 category: folk

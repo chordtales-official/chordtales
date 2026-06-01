@@ -1,5 +1,5 @@
 ---
-title: "Akad • Kunci Gitar & Lirik - Nada adasar C"
+title: "Kunci Gitar Akad - Payung Teduh chordtales.com"
 artist: "Payung Teduh"
 genre: "Indie"
 category: indie

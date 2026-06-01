@@ -1,5 +1,5 @@
 ---
-title: "Bertaut • Kunci Gitar & Lirik - Nada adasar C"
+title: "Kunci Gitar Bertaut - Nadin Amizah"
 artist: "Nadin Amizah"
 genre: "Folk"
 category: folk

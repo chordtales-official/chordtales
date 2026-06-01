@@ -1,15 +1,15 @@
 ---
-title: "Satru 2 - Kunci Gitar & Lirik - Nada Dasar"
+title: "Kunci Gitar Satru-2 Denny Caknan Feat.Happy Asmara"
 artist: "Denny Caknan | Happy Asmara"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-01
 youtube_id: "rEjSkBl47OY"
 spotify_url: ""
 slug: denny-caknan-Satru-2
 excerpt: "Chord Satru 2 Denny Caknan & Happy Asmara kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
-tags: [Am, koplo, galau, denny caknan, happy asmara, Satru 2, lagu jawa]
+tags: ['Am', 'koplo', 'galau', 'denny caknan', 'happy asmara', 'satru 2', 'lagu jawa']
 key: Am
 lyrics: |
   Wis tak pupuk winihe kateresnanku
@@ -17,13 +17,14 @@ lyrics: |
   Dungoku tukul lemu urip ayem
 ---
 {% include youtube.html %}
-**Intro :** F G Em Am | F G Am
+**INTRO**  
+F G Em Am | F G Am
 
-**Verse :**
+**VERSE 1**  
           Am              G
 Wis tak pupuk winihe kateresnanku
         F
-Kanggo awakmu..(kanggo awakmu)...
+Kanggo awakmu.. (kanggo awakmu)...
 G - Am                 G
 Dungoku tukul lemu urip ayem
        F
@@ -33,7 +34,7 @@ Aku percoyo winih tresnamu.
 F                  C  G
 Nandes mancep ing atiku
 
-**Pre-Chorus :**
+**PRE-CHORUS**  
 Dm                   Am
 Opo kurang lehku ngerteni karepmu
 Dm                Am
@@ -45,23 +46,30 @@ Ra sah tukaran wae
        Em            E
 Mbok dieman-eman hubungane
 
-**Reff :**
-        F             G            Em      Am
-Uwong sing tak tresnani,tak gawe sandaran ati
+**REFF**  
+        F             G
+Uwong sing tak tresnani
+         Em       Am
+tak gawe sandaran ati
          F           G         C    E
-Mbok ojo satru-satru ae, sayangku..u.uu
-       F           G           Em          Am
-Jajal ra sah percoyo nek trimo kabar ko njobo
-     Dm        Em             F    G  Am
-Aku kerjo nguripimu, nggo makmurne atim
+Mbok ojo satru-satru ae, sayangku.. uuu
+       F           G
+Jajal ra sah percoyo
+          Em         Am
+nek trimo kabar ko njobo
+     Dm        Em
+Aku kerjo nguripimu,
+        F    G    Am
+nggo makmurne atimu..
 
-**Interlude  :** F Em F G Am | Dm Em F G Am
+**INTERLUDE**  
+F Em F G Am | Dm Em F G Am
 
-**Pre-Chorus :**
+**BRIDGE**  
         Dm
-Hoo aa, aku ngenteni...
+Hoo aa, aku ngerteni...
   Em           F       E
-Aku ngentenimu, hoo uo-woo...
+Aku ngertenimu, hoo uo-woo...
             Dm               Am
 Hu-oh, opo kurang lehku ngerteni karepmu
 Dm                  Am
@@ -73,12 +81,28 @@ Ra sah tukaran wae
         Em             E
 Mbok dieman-eman hubungane
 
-**Reff :** 
-      F              G           Em        Am
-Uwong sing tak tresnani, tak gawe sandaran ati
-         F            G         C    E 
-Mbok ojo satru-satru wae, sayangku..u-uu
-      F                       Em          Am
-Jajal ra sah percoyo nek trimo kabar ko njobo
-       Dm       Em           F - G   Am
-Aku kerjo nguripimu, nggo makmurne atimu (2x)
+**REFF 2**  
+        F             G
+Uwong sing tak tresnani
+         Em       Am
+tak gawe sandaran ati
+         F           G         C    E
+Mbok ojo satru-satru ae, sayangku.. uuu
+       F           G
+Jajal ra sah percoyo
+          Em         Am
+nek trimo kabar ko njobo
+     Dm        Em
+Aku kerjo nguripimu,
+        F    G    Am
+nggo makmurne atimu..
+
+**OUTRO**  
+       Dm       Em
+Aku kerjo nguripimu..
+         F - G  Am
+nggo makmurne atimu..
+       Dm       Em
+Aku kerjo nguripimu..
+         F - G  Am
+nggo makmurne atimu..

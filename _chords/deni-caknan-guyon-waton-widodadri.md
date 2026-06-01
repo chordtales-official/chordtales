@@ -1,5 +1,5 @@
 ---
-title: "Widodadri - Kunci Gitar & Lirik - Nada Dasar G"
+title: "Kunci Gitar Widodari - Denny Caknan Feat.Guyon Waton"
 artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
@@ -9,7 +9,7 @@ youtube_id: "zgSfpOOuI6Q"
 spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-widodari
 excerpt: "Chord Widodadri Denny Caknan & Guyon Waton, kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
-tags: [G, koplo, galau, denny caknan, widodari, lagu jawa, pop jawa]
+tags: ['G', 'koplo', 'galau', 'denny caknan', 'widodari', 'lagu jawa', 'pop jawa']
 key: G
 lyrics: |
   Tembangan sepeleku
@@ -105,5 +105,3 @@ Bm          E      Am
 Hadirkan penjaga hatiku
      F         G         C
 Yang s'lalu setia menemaniku
-#### Activekan metronome untuk tempo stabil
-::v G | Nada dasar G. Silahkan transpose nada untuk menyesuaikan vocal anda::

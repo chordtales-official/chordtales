@@ -1,5 +1,5 @@
 ---
-title: "Anugrah Terindah • Kunci Gitar & Lirik - Nada adasar G"
+title: "Kunci Gitar Anugrah Terindah - Sheila-On7"
 artist: "Sheila On 7"
 genre: "Pop"
 category: pop

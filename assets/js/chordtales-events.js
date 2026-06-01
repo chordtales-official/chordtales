@@ -53,8 +53,8 @@
       <a href="${item.url}" class="result-item">
           <div class="result-icon"><div data-icon="pop"></div></div>
           <div class="result-info">
-            <h4>${item.title}</h4>
-            <p>${item.artist}</p>
+            <h4>${item.title.replace("Kunci Gitar ", "")}</h4>
+            <p>Artis: ${item.artist}</p>
           </div>
           <div class="result-chevron">
             <div data-icon="next"></div>
@@ -289,5 +289,75 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initChordEngine();
+    initBelajarChord();
 });
 /* --- SESI 05: INIT END --- */
+
+/* --- SESI 06: BELAJAR CHORD START --- */
+function initBelajarChord() {
+    const section = document.querySelector('#belajar-chord');
+    if (!section) return;
+
+    fetch('/assets/chord.json')
+    .then(res => res.json())
+    .then(chordData => {
+            // 1. Group chord per keluarga
+            const families = {};
+            Object.keys(chordData).forEach(chordName => {
+                const match = chordName.match(/^([A-G][#b]?)/);
+                if (match) {
+                    const root = match[1];
+                    if (!families[root]) families[root] = [];
+                    families[root].push({ name: chordName, data: chordData[chordName] });
+                }
+            });
+
+            // 2. Urutan yang mau ditampilin
+            const order = ['C','C#','D','D#','E','Eb','F','F#','G','G#','A','Ab','A#','B','Bb'];
+
+            // 3. Loop sesuai urutan
+            order.forEach(root => {
+                const gridId = `grid-${root.replace('#', 's').replace('b', 'f')}`;
+                const grid = document.getElementById(gridId);
+                if (!grid ||!families[root]) return;
+
+                families[root].sort((a, b) => a.name.localeCompare(b.name));
+
+                families[root].forEach(chord => {
+                    const card = document.createElement('div');
+                    card.className = 'chord-card';
+                    card.innerHTML = createChordSVG(chord.name, chord.data);
+
+                    card.addEventListener('click', () => {
+                        if (typeof playChordSound === 'function') {
+                            playChordSound(chord.name);
+                        }
+                    });
+
+                    grid.appendChild(card);
+                });
+            });
+        })
+    .catch(err => console.error('[Belajar Chord] Gagal load:', err));
+
+    // Accordion toggle - sistem buka 1, tutup lainnya
+    section.querySelectorAll('.family-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const isOpen = content.classList.contains('show');
+
+            // Tutup semua dulu
+            section.querySelectorAll('.family-content.show').forEach(openContent => {
+                openContent.classList.remove('show');
+                openContent.previousElementSibling.classList.remove('active');
+            });
+
+            // Buka yang diklik kalau sebelumnya ketutup
+            if (!isOpen) {
+                content.classList.add('show');
+                header.classList.add('active');
+            }
+        });
+    });
+}
+/* --- SESI 06: BELAJAR CHORD END --- */

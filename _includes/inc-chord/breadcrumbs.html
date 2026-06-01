@@ -9,14 +9,15 @@
     
     {% if page.artist and page.collection == 'chords' %}
         {% assign main_artist = page.artist | split: "|" | first | strip %}
+        {% assign artist_slug = main_artist | slugify %}
         <span class="separator">|</span>
-        <span class="breadcrumb-artist" title="{{ main_artist }}">
+        <a href="/artist/{{ artist_slug }}/" class="breadcrumb-artist" title="{{ main_artist }}">
             {{ main_artist | truncate: 20, "" }}
-        </span>
+        </a>
     {% endif %}
     
     {% if page.title %}
         <span class="separator">•</span>
-        <span aria-current="page">{{ page.title | truncate: 15, "..." }}</span>
+        <span aria-current="page">{{ page.title | replace: 'Kunci Gitar', '' | strip | truncate: 15, "..." }}</span>
     {% endif %}
 </nav>

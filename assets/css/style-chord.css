@@ -31,37 +31,44 @@
 .youtube-embed {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: 16 / 8;
-  margin: 0 auto;
-  border-radius: 12px;
+  aspect-ratio: 16 / 9; /* Menjaga proporsi video */
+  background-color: var(--bg-color, #1e1e26); /* Warna dasar gelap yang elegan */
+  cursor: pointer;
   overflow: hidden;
-  display: flex;
-  align-items: center;
+  border-radius: 8px; /* Tampilan sudut lebih rapih */
 }
-.youtube-embed img {
+
+/* Pastikan gambar dan iframe memenuhi container */
+.youtube-embed img,
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  display: block;
+  border: none;
 }
+
+/* Posisi tombol play di tengah */
 .youtube-embed .play-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
-  color: white;
-  background: rgba(0,0,0,0.6);
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  pointer-events: none;
+  background: rgba(252,38,38,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  display: none;
 }
+
 /* --- SESI 00: BREADCRUMBS STYLES END --- */
 
 /* --- SESI 01: LAYOUT STRUCTURE START --- */
@@ -98,11 +105,11 @@
         padding: 20px 10px;
     }
     .article-chord {
-        width: 550px; 
+        width: 600px; 
         padding: 40px 0;
     }
     .sidebar-chord {
-        max-width: 450px;
+        max-width: 400px;
         padding: 40px 0;
         position: sticky;
         top: 0;
@@ -519,7 +526,7 @@
     overflow: hidden;
 }
 .related-list li + li {
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--accent-1);
 }
 .related-list li a {
     display: flex;
@@ -530,7 +537,6 @@
     color: var(--text-main);
     font-size: 14px;
     transition: background 0.15s;
-    border: 1px dotted var(--border-color);
 }
 .related-list li a:hover {
     background: var(--bg-body);
@@ -546,13 +552,8 @@
     align-items: center;
 }
 .song-row [data-icon]{
-    width: 25px;
-    height: 25px;
     margin-right: 8px;
-    background: var(--bg-container);
-    border: var(--border-color);
-    border-radius: 50px;
-    padding: 2px;
+    color: var(--text-muted);
 }
 .song-artist {
     flex-shrink: 0;
@@ -585,13 +586,17 @@
 }
 .view-all-artist {
     display: block;
-    text-align: right;
-    margin-top: 8px;
-    padding-right: 4px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent-1);
+    text-align: center;
+    margin: 20px auto 0;
+    font-weight: 800;
+    background: var(--accent-1);
+    color: var(--text-main);
     text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
 }
 .view-all-artist:hover {
     text-decoration: underline;

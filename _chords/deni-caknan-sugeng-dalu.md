@@ -1,15 +1,15 @@
 ---
-title: "Sugeng Dalu - Kunci Gitar & Lirik - Nada Dasar C"
+title: "Kunci Gitar Sugeng Dalu - Denny Caknan - chordtales.com"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-01
 youtube_id: "W1e1ZZidrAg"
 spotify_url: ""
 slug: denny-caknan-sugeng-dalu
 excerpt: "Chord Sugeng Dalu Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
-tags: [C, koplo, galau, denny caknan, Sugeng Dalu, pop, jawa]
+tags: ['C', 'koplo', 'galau', 'denny caknan', 'sugeng dalu', 'pop', 'jawa']
 key: C
 lyrics: |
   Sugeng dalu, Ati sing biyen tau ngelarani
