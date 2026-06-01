@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'yaml'
 require 'fileutils'
 require 'date'
@@ -12,7 +13,7 @@ Jekyll::Hooks.register :site, :pre_render do |site|
   Dir.glob('_chords/*.md').each do |file|
     next unless File.file?(file)
 
-    content = File.read(file)
+    content = File.read(file, encoding: 'UTF-8') # <- ini diganti
     parts = content.split('---', 3)
     next if parts.size < 3
 
