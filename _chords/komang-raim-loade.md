@@ -1,14 +1,14 @@
 ---
-title: "Kunci Gitar Komang - Raim Loade chordtales.com"
-artist: "Raim Loade"
+title: "Kunci Gitar Komang - Raim Laode chordtales.com"
+artist: "Raim Laode"
 genre: "Folk"
 category: folk
 date: 2026-05-18
 last_modified_at: 2026-05-18
 youtube_id: "fKRtnMYMW08"
-slug: raim-loade-Komang
-excerpt: "Chord Komang Raim Loade kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
-tags: [folk, pop, Raim Loade, Komang, pop hits, lagu trend]
+slug: raim-laode-Komang
+excerpt: "Chord Komang Raim Laode kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
+tags: ['folk', 'pop', 'raim laode', 'komang', 'pop hits', 'lagu trend']
 key: G
 lyrics: |
   dari kejauhan tergambar cerita tentang kita
