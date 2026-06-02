@@ -1,6 +1,6 @@
 ---
 layout: chord
-title: "Kunci Gitar Denny Caknan • Wirang - chordtales.com"
+title: "Kunci Gitar Wirang - Denny Caknan Chord Mudah"
 artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop

@@ -1,0 +1,291 @@
+<!-- ChordTales Tuner: Auto + Easing + Start Button -->
+<div class="ct-tuner-main-scope">
+    <div class="tuner-glass-card">
+        <h3 class="tuner-brand">CHORD<span>TALES</span> TUNER</h3>
+        <p style="font-size:16px;">Stem gitar agar suara makin glossy</p>
+
+        <div class="tuner-visual-area">
+            <canvas id="tunerCanvasV3" width="600" height="400"></canvas>
+            <div class="tuner-info-layer">
+                <h1 id="note-v3">--</h1>
+                <div id="cents-v3">TEKAN MULAI</div>
+            </div>
+        </div>
+
+        <div class="tuner-strings-grid">
+            <button class="string-btn" data-note="E2">E</button>
+            <button class="string-btn" data-note="A2">A</button>
+            <button class="string-btn" data-note="D3">D</button>
+            <button class="string-btn" data-note="G3">G</button>
+            <button class="string-btn" data-note="B3">B</button>
+            <button class="string-btn" data-note="E4">E</button>
+        </div>
+
+        <button id="mic-v3-toggle" class="mic-trigger-btn" onclick="startEngineV3()">AKTIFKAN TUNER</button>
+        <button id="mode-toggle" class="mode-btn" onclick="toggleMode()">MODE: AUTO</button>
+
+        <div class="tuner-tips-box">
+            <strong>Tips:</strong> Klik AKTIFKAN TUNER dulu lalu petik senar. Untuk mode manual urutan nya dari senar 6 = E sisi kiri. Senar 1 = E sisi kanan.
+            <p><span>HIJAU NEON</span> = Pas ±3 cents. <span style="color:#44ccff">BIRU</span> = Tinggi. <span style="color:#ff4444">MERAH</span> = Rendah</p>
+        </div>
+    </div>
+
+    <style>
+    .ct-tuner-main-scope { width: 100%; display: flex; justify-content: center; padding: 20px 10px; box-sizing: border-box; font-family: var(--font-family); }
+    .tuner-glass-card { width: 100%; max-width: 400px; background: var(--bg-card); border-radius: 15px; padding: 35px 25px; text-align: center; position: relative; box-shadow: var(--shadow); border: 1px solid var(--border-color); overflow: hidden; }
+    .tuner-brand { letter-spacing: 3px; font-weight: 900; margin: 0 0 10px; color: var(--text-main); opacity: 0.8; }
+    .tuner-brand span { color: var(--accent-1); }
+    .ct-tuner-main-scope p { color: var(--text-muted); }
+    .tuner-visual-area { position: relative; height: 280px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+      #tunerCanvasV3 { width: 100%; height: auto; max-width: 340px; z-index: 1; }
+    .tuner-info-layer { position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); z-index: 2; pointer-events: none; }
+      #note-v3 { font-size: 5.5rem; font-weight: 900; margin: 0; line-height: 1; color: var(--text-main); transition: color 0.3s ease; }
+      #cents-v3 { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); letter-spacing: 1.5px; margin-top: 10px; text-transform: uppercase; }
+    .tuner-strings-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 25px; }
+    .string-btn { background: var(--bg-body); border: 1px solid var(--border-color); color: var(--text-muted); padding: 15px 0; border-radius: 15px; font-weight: 800; cursor: pointer; transition: 0.3s; }
+    .string-btn.active { background: var(--accent-1); color: var(--card-text); box-shadow: 0 0 20px rgba(230, 126, 34, 0.4); border-color: transparent; }
+    .mic-trigger-btn { width: 100%; background: var(--accent-1); color: var(--card-text); border: none; padding: 20px; border-radius: 20px; font-size: 1rem; font-weight: 900; cursor: pointer; transition: 0.4s; box-shadow: 0 10px 25px rgba(230, 126, 34, 0.2); margin-bottom: 12px; }
+    .mic-trigger-btn.active { background: #333; box-shadow: none; }
+    .mode-btn { width: 100%; background: var(--bg-body); color: var(--text-muted); border: 1px solid var(--border-color); padding: 14px; border-radius: 15px; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: 0.3s; }
+    .tuner-tips-box { margin-top: 25px; background: var(--bg-container); padding: 15px; border-radius: 18px; font-size: 0.75rem; color: var(--text-muted); text-align: left; border: 1px solid var(--border-color); line-height: 1.4; }
+    .tuner-tips-box span { color: #00ff41; font-weight: bold; }
+    </style>
+
+    <script>
+        (function() {
+            let audioCtx, analyser, stream, animation;
+            let active = false;
+            let targetHz = null;
+            let smoothCents = 0;
+            let freqStack = [];
+            let autoMode = true;
+            let lastSwitchTime = 0;
+
+            const strings = [
+                {note: 'E2', hz: 82.41, el: null},
+                {note: 'A2', hz: 110.00, el: null},
+                {note: 'D3', hz: 146.83, el: null},
+                {note: 'G3', hz: 196.00, el: null},
+                {note: 'B3', hz: 246.94, el: null},
+                {note: 'E4', hz: 329.63, el: null}
+            ];
+
+            const cvs = document.getElementById('tunerCanvasV3');
+            const ctx = cvs.getContext('2d');
+            const noteEl = document.getElementById('note-v3');
+            const centsEl = document.getElementById('cents-v3');
+            const startBtn = document.getElementById('mic-v3-toggle');
+            const modeBtn = document.getElementById('mode-toggle');
+
+            function getCSSVar(varName) {
+                return getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+            }
+
+            strings.forEach(s => {
+                s.el = document.querySelector(`[data-note="${s.note}"]`);
+                s.el.onclick = () => {
+                    if(!autoMode && active) tuneTo(s.hz, s.note);
+                };
+            });
+
+            window.toggleMode = function() {
+                autoMode =!autoMode;
+                modeBtn.innerText = `MODE: ${autoMode? 'AUTO' : 'MANUAL'}`;
+                centsEl.innerText = active? (autoMode? 'AUTO MODE' : 'PILIH SENAR') : 'TEKAN MULAI';
+                if(!autoMode) {
+                    document.querySelectorAll('.string-btn').forEach(b => b.classList.remove('active'));
+                    targetHz = null;
+                    smoothCents = 0;
+                }
+            }
+
+            function tuneTo(hz, note) {
+                targetHz = hz;
+                noteEl.innerText = note.replace(/[0-9]/g, '');
+                strings.forEach(s => s.el.classList.remove('active'));
+                strings.find(s => s.hz === hz).el.classList.add('active');
+                centsEl.innerText = "MENYETEL...";
+            }
+
+            function autoSelectString(pitch) {
+                const now = Date.now();
+                if(now - lastSwitchTime < 600) return;
+
+                let closest = strings[0];
+                let minDiff = Infinity;
+
+                strings.forEach(s => {
+                    let p = pitch;
+                    while(p < s.hz * 0.6) p *= 2;
+                    while(p > s.hz * 1.6) p /= 2;
+                    let diff = Math.abs(p - s.hz) / s.hz;
+                    if(diff < minDiff) {
+                        minDiff = diff;
+                        closest = s;
+                    }
+                });
+
+                if(minDiff < 0.055 && closest.hz!== targetHz) {
+                    tuneTo(closest.hz, closest.note);
+                    lastSwitchTime = now;
+                }
+            }
+
+            window.startEngineV3 = async function() {
+                if(active) { stopEngine(); return; }
+                try {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    stream = await navigator.mediaDevices.getUserMedia({
+                        audio: { echoCancellation: false, noiseSuppression: true, autoGainControl: false }
+                    });
+                    const source = audioCtx.createMediaStreamSource(stream);
+                    analyser = audioCtx.createAnalyser();
+                    analyser.fftSize = 4096;
+                    analyser.smoothingTimeConstant = 0.8;
+                    source.connect(analyser);
+                    active = true;
+                    startBtn.innerText = "MATIKAN TUNER";
+                    startBtn.classList.add('active');
+                    modeBtn.innerText = `MODE: ${autoMode? 'AUTO' : 'MANUAL'}`;
+                    centsEl.innerText = autoMode? 'AUTO MODE' : 'PILIH SENAR';
+                    loop();
+                } catch(e) { alert("Mikrofon tidak diizinkan."); }
+            }
+
+            function stopEngine() {
+                active = false;
+                cancelAnimationFrame(animation);
+                if(audioCtx) audioCtx.close();
+                startBtn.innerText = "AKTIFKAN TUNER";
+                startBtn.classList.remove('active');
+                modeBtn.innerText = `MODE: ${autoMode? 'AUTO' : 'MANUAL'}`;
+                centsEl.innerText = "TEKAN MULAI";
+                document.querySelectorAll('.string-btn').forEach(b => b.classList.remove('active'));
+                targetHz = null;
+                smoothCents = 0;
+                render();
+            }
+
+            function loop() {
+                if(!active) return;
+                animation = requestAnimationFrame(loop);
+                const buffer = new Float32Array(analyser.fftSize);
+                analyser.getFloatTimeDomainData(buffer);
+
+                const pitch = detectPitch(buffer, audioCtx.sampleRate);
+                if(pitch > 75 && pitch < 400) {
+                    if(autoMode &&!targetHz) autoSelectString(pitch);
+                    if(targetHz) {
+                        freqStack.push(pitch); if(freqStack.length > 7) freqStack.shift();
+                        const sorted = [...freqStack].sort((a,b)=>a-b);
+                        const stable = sorted[Math.floor(sorted.length/2)];
+
+                        let p = stable;
+                        while(p < targetHz * 0.82) p *= 2;
+                        while(p > targetHz * 1.18) p /= 2;
+
+                        const c = 1200 * Math.log2(p / targetHz);
+
+                        const diff = c - smoothCents;
+                        const speed = Math.abs(diff) > 25? 0.28 : (Math.abs(diff) > 10? 0.15 : 0.06);
+                        smoothCents += diff * speed;
+
+                        const isOk = Math.abs(smoothCents) < 3;
+                        noteEl.style.color = isOk? "#00ff41" : (smoothCents < 0? "#ff4444" : "#44ccff");
+                        centsEl.innerText = Math.round(smoothCents) + " CENTS";
+                    }
+                }
+                render();
+            }
+
+            function render() {
+                ctx.clearRect(0, 0, cvs.width, cvs.height);
+                const cx = cvs.width / 2;
+                const cy = cvs.height - 30;
+                const r = 320;
+
+                const borderColor = getCSSVar('--border-color');
+                const accent1 = getCSSVar('--accent-1');
+                const textMain = getCSSVar('--text-main');
+                const bgCard = getCSSVar('--bg-card');
+
+                ctx.beginPath();
+                ctx.arc(cx, cy, r, Math.PI, 2 * Math.PI);
+                ctx.strokeStyle = borderColor;
+                ctx.lineWidth = 12;
+                ctx.lineCap = "round";
+                ctx.stroke();
+
+                const isOk = Math.abs(smoothCents) < 3;
+                ctx.beginPath();
+                ctx.arc(cx, cy, r, Math.PI + (0.47 * Math.PI), Math.PI + (0.53 * Math.PI));
+                ctx.strokeStyle = isOk? "#00ff41" : accent1;
+                ctx.lineWidth = 14;
+                if(isOk) { ctx.shadowBlur = 30; ctx.shadowColor = "#00ff41"; }
+                ctx.stroke();
+                ctx.shadowBlur = 0;
+
+                let angle = (Math.PI * 1.5) + ((smoothCents / 100) * Math.PI);
+                angle = Math.max(Math.PI, Math.min(2 * Math.PI, angle));
+
+                ctx.save();
+                ctx.translate(cx, cy);
+                ctx.rotate(angle - (Math.PI * 1.5));
+                ctx.beginPath();
+                ctx.moveTo(0, 12);
+                ctx.lineTo(0, -r + 38);
+
+                if(isOk) {
+                    ctx.shadowBlur = 35;
+                    ctx.shadowColor = "#00ff41";
+                    ctx.strokeStyle = "#00ff41";
+                    ctx.lineWidth = 6;
+                } else {
+                    ctx.strokeStyle = smoothCents < 0? "#ff4444" : "#44ccff";
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = ctx.strokeStyle;
+                    ctx.lineWidth = 5;
+                }
+
+                ctx.lineCap = "round";
+                ctx.stroke();
+                ctx.restore();
+
+                ctx.shadowBlur = 0;
+                ctx.beginPath();
+                ctx.arc(cx, cy, 16, 0, Math.PI * 2);
+                ctx.fillStyle = bgCard;
+                ctx.fill();
+                ctx.strokeStyle = isOk? "#00ff41" : textMain;
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(cx, cy, 6, 0, Math.PI * 2);
+                ctx.fillStyle = textMain;
+                ctx.fill();
+            }
+
+            function detectPitch(buffer, sampleRate) {
+                let rms = 0;
+                for(let i=0; i<buffer.length; i++) rms += buffer[i]*buffer[i];
+                rms = Math.sqrt(rms/buffer.length);
+
+                if(rms < 0.007 || rms > 0.45) return -1;
+
+                let c = new Float32Array(buffer.length);
+                for(let i=0; i<buffer.length; i++) {
+                    for(let j=0; j<buffer.length-i; j++) c[i] += buffer[j] * buffer[j+i];
+                }
+                let d = 0; while(d < c.length-2 && c[d] > c[d+1]) d++;
+                let maxv = -1, maxp = -1;
+                for(let i=d; i<buffer.length; i++) {
+                    if(c[i] > maxv) { maxv = c[i]; maxp = i; }
+                }
+                return sampleRate / maxp;
+            }
+
+            render();
+        })();
+    </script>
+</div>

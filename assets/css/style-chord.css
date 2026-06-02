@@ -492,7 +492,7 @@
     position: fixed; top: 0; left: 0;
     width: 100%; max-width: 600px; height: 100vh;
     background: var(--bg-body); z-index: 1005;
-    display: none; flex-direction: column; padding: 20px;
+    display: none; flex-direction: column; padding: 0;
 }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 /* --- SESI 09: TUNER OVERLAY END --- */

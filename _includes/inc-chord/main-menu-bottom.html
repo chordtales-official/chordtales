@@ -1,10 +1,10 @@
 <div id="tuner-screen" class="tuner-overlay" style="display:none;">
-    <div style="display:flex; justify-content: space-between; align-items:center; margin-bottom:20px;">
+    <div style="display:flex; justify-content: space-between; align-items:center; margin:10px;">
         <h3>Guitar Tuner</h3>
         <div style="cursor:pointer; font-size: 28px;" onclick="closeTuner()">×</div>
     </div>
     <div style="flex:1; display:flex; align-items:center; justify-content:center;">
-        <p style="color:var(--text-muted)">Sensor Audio Ready...</p>
+        {% include tuner.html %}
     </div>
 </div>
 
