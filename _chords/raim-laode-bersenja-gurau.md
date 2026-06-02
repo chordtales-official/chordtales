@@ -3,7 +3,7 @@ title: "Kunci Gitar Bersenja Gurau - Raim Laode"
 artist: "Raim Laode"
 genre: "Folk"
 category: folk
-date: 2026-05-18
+date: 2026-06-01
 last_modified_at: 2026-06-01
 youtube_id: "jmvX6XyvCy0"
 slug: raim-loade-bersenja-gurau
@@ -18,14 +18,12 @@ lyrics: |
 {% include youtube.html %}
 #### Lirik & Chord Bersenja Gurau
 **Intro :** C..F
- 
         C
 Banyak yang salah mengira
       F
 Senja bukan tentang kopi
      F
 Lagu indie dan cerita
- 
          C
 Ku kasi tahu kepadamu
        F
@@ -40,7 +38,6 @@ G      F
 Pada setiap mendungnya
   Dm       G
 Setiap derita
- 
         C       C7        Am
 Ku kan ada.. slalu.. untukmu..
 G        F
@@ -57,14 +54,12 @@ Em     F
 Tidur selalu tak tenang
      F
 Pagi selalu menyiksa
- 
        C
 Semua akan baik saja
 Em     F
 Sebab Tuhan tlah berjanji
         Dm      G        C
 Setelah sempit ada kemudahan
- 
   Dm       Em
 Kita miliknya
     F
@@ -89,7 +84,6 @@ A      G
 Pada setiap mendungnya
   Em      A
 Setiap derita
- 
         D     D7      Bm
 Ku kan ada.. selalu.. untukmu..
 A         G
