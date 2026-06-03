@@ -4,7 +4,7 @@ artist: "Noer Halimah"
 genre: "Dangdut"
 category: dangdut
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-03
 youtube_id: "7hRzocep0Z4"
 slug: noer-halimah-keranda-cinta
 excerpt: "Chord Keranda Cinta Noer Halimah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
