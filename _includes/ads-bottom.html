@@ -1,5 +1,6 @@
 {% if site.ads_enabled %}
 <div id="ads-bottom-wrapper" class="ads-bottom-wrapper">
+  <button id="ads-close-btn" class="ads-close-btn" aria-label="Close ad">×</button>
   <div id="adsense-container-bottom">
     <ins class="adsbygoogle"
      style="display:block"
@@ -11,12 +12,11 @@
 
 <style>
 .ads-bottom-wrapper {
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
+  position: fixed; /* tetep floating melayang */
+  bottom: 75px; /* naik dikit biar ga ketutup navbar HP */
+  right: 15px; /* mepet kanan */
   width: 300px;
   min-height: 90px;
-  height: auto;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -29,6 +29,28 @@
   padding: 5px;
 }
 
+.ads-close-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  color: #aaa; /* abu samar */
+  border: none;
+  width: 18px; /* kecil */
+  height: 18px;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  z-index: 10000;
+  padding: 0;
+  opacity: 0.4; /* samar banget */
+  transition: opacity 0.2s;
+}
+.ads-close-btn:hover { 
+  opacity: 0.8; /* kebaca pas disentuh */
+  color: #666;
+}
+
 #adsense-container-bottom { width: 100%; min-height: 80px; display: flex; justify-content: center; align-items: center; }
 .ads-bottom-wrapper ins.adsbygoogle { display: block !important; margin: 0 auto; }
 
@@ -36,9 +58,22 @@
   .ads-bottom-wrapper {
     width: 260px;
     min-height: 80px;
-    right: 5px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 70px; /* HP dikecilin dikit */
   }
+  .ads-close-btn { width: 20px; height: 20px; } /* HP tombol agak gedein biar ke tap */
 }
 </style>
+
+<script>
+// Logic close + ingat status biar ga muncul lagi
+document.getElementById('ads-close-btn').addEventListener('click', function() {
+  document.getElementById('ads-bottom-wrapper').style.display = 'none';
+  localStorage.setItem('adsBottomClosed', 'true');
+});
+
+if(localStorage.getItem('adsBottomClosed') === 'true') {
+  document.getElementById('ads-bottom-wrapper').style.display = 'none';
+}
+</script>
 {% endif %}
