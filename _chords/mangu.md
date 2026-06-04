@@ -68,25 +68,25 @@ Kau menggenggam ku menadah nya
 **[INTERLUDE]** Am Em G D - Am Em G D
 
 **[BRIDGE]**
-            Am           Em       G
+            Am           Em       G    D
 Jangan salahkan fahamku kini, tertuju Ooo..
-          D                Am             
+           Am               Em
 Siapa yang tau, Siapa yang mau
-      Em                 G
+         G                 D
 Kau di sana Aku di seberangmu
-         D          Am
+         Am          Em
 Cerita kita sulit dicerna
-          Em            G         
+            G            D
 Tak lagi sama cara berdo'a
-         D          Am
+          Am           Em
 Cerita kita sulit diterka
-          Em            G        
+            G             D
 Tak lagi sama Arah kiblatnya
-         D          Am
+          Am          Em
 Cerita kita sulit dicerna
-          Em            G         
+            G            D
 Tak lagi sama cara berdo'a
-         D          Am
+         Am          Em
 Cerita kita sulit diterka
-          Em   G          D        
+           G             D  -G
 Tak lagi sama Arah kiblat nya
