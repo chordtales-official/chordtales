@@ -1,5 +1,5 @@
 {% if site.ads_enabled %}
-<div id="ads-bottom-wrapper" class="ads-bottom-wrapper">
+<div id="ads-bottom-wrapper" class="ads-bottom-wrapper" style="display:none;">
   <button id="ads-close-btn" class="ads-close-btn" aria-label="Close ad">×</button>
   <div id="adsense-container-bottom">
     <ins class="adsbygoogle"
@@ -12,9 +12,9 @@
 
 <style>
 .ads-bottom-wrapper {
-  position: fixed; /* tetep floating melayang */
-  bottom: 75px; /* naik dikit biar ga ketutup navbar HP */
-  right: 15px; /* mepet kanan */
+  position: fixed;
+  bottom: 75px;
+  right: 15px;
   width: 300px;
   min-height: 90px;
   background: var(--bg-card);
@@ -23,10 +23,10 @@
   z-index: 9999;
   box-shadow: var(--shadow);
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
+  display: none; /* sembunyiin dulu */
 }
 
 .ads-close-btn {
@@ -34,46 +34,69 @@
   top: 4px;
   right: 6px;
   background: transparent;
-  color: #aaa; /* abu samar */
+  color: #aaa;
   border: none;
-  width: 18px; /* kecil */
+  width: 18px;
   height: 18px;
   font-size: 16px;
   line-height: 16px;
   cursor: pointer;
   z-index: 10000;
   padding: 0;
-  opacity: 0.4; /* samar banget */
+  opacity: 0.4;
   transition: opacity 0.2s;
 }
-.ads-close-btn:hover { 
-  opacity: 0.8; /* kebaca pas disentuh */
-  color: #666;
-}
+.ads-close-btn:hover { opacity: 0.8; color: #666; }
 
-#adsense-container-bottom { width: 100%; min-height: 80px; display: flex; justify-content: center; align-items: center; }
+#adsense-container-top { width: 100%; display: flex; justify-content: center; align-items: center; }
 .ads-bottom-wrapper ins.adsbygoogle { display: block !important; margin: 0 auto; }
 
 @media (max-width: 400px) {
-  .ads-bottom-wrapper {
-    width: 260px;
-    min-height: 80px;
-    right: 10px;
-    bottom: 70px; /* HP dikecilin dikit */
-  }
-  .ads-close-btn { width: 20px; height: 20px; } /* HP tombol agak gedein biar ke tap */
+  .ads-bottom-wrapper { width: 260px; min-height: 80px; right: 10px; bottom: 70px; }
+  .ads-close-btn { width: 20px; height: 20px; }
 }
 </style>
 
 <script>
-// Logic close + ingat status biar ga muncul lagi
-document.getElementById('ads-close-btn').addEventListener('click', function() {
-  document.getElementById('ads-bottom-wrapper').style.display = 'none';
-  localStorage.setItem('adsBottomClosed', 'true');
-});
+(function() {
+  let adShown = false;
+  const wrapper = document.getElementById('ads-bottom-wrapper');
+  const closeBtn = document.getElementById('ads-close-btn');
 
-if(localStorage.getItem('adsBottomClosed') === 'true') {
-  document.getElementById('ads-bottom-wrapper').style.display = 'none';
-}
+  // Cek kalo user udah pernah close
+  if(localStorage.getItem('adsBottomClosed') === 'true') return;
+
+  // Fungsi munculin iklan
+  function showAd() {
+    if(adShown) return;
+    adShown = true;
+    wrapper.style.display = 'flex';
+    
+    // Push iklan baru jalan pas muncul
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    
+    // Copot event scroll biar ga jalan terus
+    window.removeEventListener('scroll', onScroll);
+  }
+
+  // Cek scroll
+  function onScroll() {
+    if(window.scrollY >= 300) {
+      showAd();
+    }
+  }
+
+  // Tombol close
+  closeBtn.addEventListener('click', function() {
+    wrapper.style.display = 'none';
+    localStorage.setItem('adsBottomClosed', 'true');
+  });
+
+  // Pasang event scroll
+  window.addEventListener('scroll', onScroll, {passive: true});
+  
+  // Jaga2 kalo user reload pas udah scroll >300px
+  if(window.scrollY >= 300) showAd();
+})();
 </script>
 {% endif %}
