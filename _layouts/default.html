@@ -2,9 +2,12 @@
 <html lang="id">
 <head>
   {% include inc-default/head.html %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1071319498684650"
+     crossorigin="anonymous"></script>
 </head>
-{% include cookie-banner.html %}
 <body class="theme-dark">
+
+  {% include cookie-banner.html %}
 
   {% include inc-default/header.html %}
 
@@ -14,13 +17,11 @@
 
   {% include inc-default/footer.html %}
 
-  <!-- JS Core - defer biar nggak ngeblok render -->
   <script src="{{ '/assets/js/chordtales-core.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/chordtales-renderer.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/chordtales-dispatcher.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/chordtales-events.js' | relative_url }}" defer></script>
   
-  <!-- Schema khusus halaman chord -->
   {% if page.layout == 'chord' %}
     {% include schema-blogposting.html %}
   {% endif %}

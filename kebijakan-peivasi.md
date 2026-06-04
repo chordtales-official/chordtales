@@ -7,7 +7,7 @@ permalink: /kebijakan-privasi/
 <div class="main-wrapper">
   <article class="page-content">
     <h1>Kebijakan Privasi</h1>
-    <p><em>Terakhir diperbarui: 01 Juni 2026</em></p>
+    <p><em>Terakhir diperbarui: {{ site.time | date: "%d %B %Y" }}</em></p>
 
     <p>Selamat datang di CHORDTALES. Privasi pengunjung adalah prioritas kami.</p>
 
@@ -20,27 +20,27 @@ permalink: /kebijakan-privasi/
     </ul>
     <p>Kami tidak mengumpulkan data pribadi seperti nama atau email, kecuali jika Anda mengirimkannya sendiri melalui halaman kontak atau request chord.</p>
 
-    <h2>2. Penggunaan Cookie</h2>
+    <h2>2. Penggunaan Cookie & Consent</h2>
     <p>Cookie adalah file kecil yang disimpan di perangkat Anda untuk:</p>
     <ul>
-      <li><strong>Cookie Fungsional:</strong> Menyimpan preferensi tema gelap/terang</li>
+      <li><strong>Cookie Esensial:</strong> Menyimpan preferensi tema gelap/terang dan status consent cookie</li>
       <li><strong>Cookie Analitik:</strong> Memahami cara pengunjung menggunakan situs melalui Google Analytics</li>
       <li><strong>Cookie Iklan:</strong> Menampilkan iklan yang relevan melalui Google AdSense</li>
     </ul>
-    <p>Anda dapat menolak cookie non-esensial melalui banner cookie di situs ini atau pengaturan browser Anda.</p>
+    <p>Kami menggunakan banner persetujuan cookie. Iklan dan analitik hanya akan dimuat setelah Anda klik "Mengerti". Anda dapat mencabut persetujuan kapan saja dengan menghapus cookie di browser.</p>
 
     <h2>3. Pihak Ketiga</h2>
     <p>Kami menggunakan layanan pihak ketiga berikut:</p>
     <ul>
-      <li><strong>Google AdSense:</strong> Untuk menampilkan iklan. Kebijakan privasi Google dapat dilihat di <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
-      <li><strong>Google Analytics:</strong> Untuk analisis trafik situs</li>
+      <li><strong>Google AdSense:</strong> Untuk menampilkan iklan. Google menggunakan cookie untuk menayangkan iklan berbasis minat. Kebijakan privasi Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
+      <li><strong>Google Analytics:</strong> Untuk analisis trafik situs tanpa mengidentifikasi identitas pribadi Anda</li>
     </ul>
 
     <h2>4. Hak Pengguna</h2>
-    <p>Anda berhak untuk:</p>
+    <p>Sesuai GDPR & UU PDP, Anda berhak untuk:</p>
     <ul>
-      <li>Menolak penggunaan cookie non-esensial</li>
-      <li>Meminta penghapusan data pribadi yang Anda kirimkan ke kami</li>
+      <li>Menolak/mencabut penggunaan cookie non-esensial via banner</li>
+      <li>Meminta akses, koreksi, atau penghapusan data pribadi yang Anda kirimkan ke kami</li>
       <li>Menghubungi kami jika ada pertanyaan terkait privasi</li>
     </ul>
 
@@ -58,11 +58,17 @@ permalink: /kebijakan-privasi/
   padding: 0 20px;
   line-height: 1.7;
   color: var(--text-main);
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 40px 30px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
 }
 
 .page-content h1 {
   font-size: 2rem;
   margin-bottom: 8px;
+  color: var(--text-main);
 }
 
 .page-content h2 {
@@ -79,10 +85,25 @@ permalink: /kebijakan-privasi/
 
 .page-content li {
   margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.page-content p {
+  color: var(--text-muted);
 }
 
 .page-content a {
   color: var(--accent-1);
   text-decoration: underline;
+}
+.page-content a:hover {
+  color: var(--accent-2);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 30px 20px;
+    margin: 20px 12px;
+  }
 }
 </style>

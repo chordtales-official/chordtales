@@ -1,0 +1,48 @@
+{% if site.ads_enabled %}
+<div id="ads-bottom-wrapper" class="ads-bottom-wrapper">
+  <div id="adsense-container-bottom">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1071319498684650"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<style>
+.ads-bottom-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 300px;
+  min-height: 90px;
+  height: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  z-index: 9999;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#adsense-container-bottom { width: 100%; min-height: 80px; display: flex; justify-content: center; align-items: center; }
+.ads-bottom-wrapper ins.adsbygoogle { display: block !important; margin: 0 auto; }
+
+@media (max-width: 400px) {
+  .ads-bottom-wrapper {
+    width: 260px;
+    min-height: 80px;
+    right: 5px;
+    bottom: 20px;
+  }
+}
+</style>
+
+<script>
+  (window.adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{% endif %}

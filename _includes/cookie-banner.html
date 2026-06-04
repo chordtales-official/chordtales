@@ -1,3 +1,4 @@
+{% if site.ads_enabled %}
 <div id="cookie-banner" class="cookie-banner">
   <div class="cookie-content">
     <div class="cookie-icon">
@@ -10,9 +11,9 @@
     <div class="cookie-text">
       <h3>Cookie buat pengalaman lebih baik</h3>
       <p>
-        CHORDTALES pakai cookie buat nyimpen tema dan ningkatin performa situs. 
+        CHORDTALES pakai cookie buat nyimpen tema dan ningkatin performa situs + iklan. 
         Dengan klik "Mengerti", kamu setuju sama 
-        <a href="/kebijakan-privasi">Kebijakan Privasi</a> kami.
+        <a href="/kebijalan-privasi">Kebijakan Privasi</a> kami.
       </p>
     </div>
     
@@ -32,14 +33,16 @@
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 20px;
-  z-index: 9999;
+  z-index: 10002;
   transform: translateY(150%);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
+  display: none;
 }
 
 .cookie-banner.show {
+  display: block;
   transform: translateY(0);
 }
 
@@ -56,90 +59,28 @@
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: rgba(138, 180, 248, 0.1);
+  background: rgba(230, 126, 34, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--accent-1);
 }
 
-.cookie-icon svg {
-  width: 22px;
-  height: 22px;
-}
-
-.cookie-text {
-  flex: 1;
-}
-
-.cookie-text h3 {
-  margin: 0 0 6px 0;
-  font-size: 1.1rem;
-  color: var(--text-main);
-}
-
-.cookie-text p {
-  margin: 0;
-  font-size: 0.93rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-.cookie-text a {
-  color: var(--accent-1);
-  text-decoration: underline;
-}
-
-.cookie-actions {
-  flex-shrink: 0;
-}
-
-.cookie-btn {
-  padding: 10px 24px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-
-.cookie-btn-primary {
-  background: var(--accent-1);
-  color: var(--bg-main);
-}
-
-.cookie-btn-primary:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.cookie-btn-primary:active {
-  transform: translateY(0);
-}
+.cookie-icon svg { width: 22px; height: 22px; }
+.cookie-text { flex: 1; }
+.cookie-text h3 { margin: 0 0 6px 0; font-size: 1.1rem; color: var(--text-main); }
+.cookie-text p { margin: 0; font-size: 0.93rem; color: var(--text-muted); line-height: 1.6; }
+.cookie-text a { color: var(--accent-1); text-decoration: underline; }
+.cookie-btn { padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: 0.9rem; cursor: pointer; border: none; transition: all 0.2s ease; white-space: nowrap; }
+.cookie-btn-primary { background: var(--accent-1); color: var(--bg-container); }
+.cookie-btn-primary:hover { background: var(--accent-2); transform: translateY(-1px); }
+.cookie-btn-primary:active { transform: translateY(0); }
 
 @media (max-width: 768px) {
-  .cookie-banner {
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    padding: 16px;
-  }
-  
-  .cookie-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-  
-  .cookie-actions {
-    width: 100%;
-  }
-  
-  .cookie-btn {
-    width: 100%;
-  }
+  .cookie-banner { left: 12px; right: 12px; bottom: 12px; padding: 16px; }
+  .cookie-content { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .cookie-actions { width: 100%; }
+  .cookie-btn { width: 100%; }
 }
 </style>
 
@@ -148,13 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const banner = document.getElementById('cookie-banner');
   const acceptBtn = document.getElementById('cookie-accept');
   
-  if (!localStorage.getItem('cookieConsent')) {
-    setTimeout(() => banner.classList.add('show'), 800);
+  const consent = localStorage.getItem('cookieConsent');
+  const consentDate = localStorage.getItem('cookieConsentDate');
+  const sixMonths = 6 * 30 * 24 * 60 * 60 * 1000;
+  
+  const isExpired = !consentDate || (Date.now() - parseInt(consentDate)) > sixMonths;
+  
+  if (!consent || isExpired) {
+    setTimeout(() => {
+      banner.style.display = 'block';
+      setTimeout(() => banner.classList.add('show'), 10);
+    }, 800);
   }
   
   acceptBtn.addEventListener('click', () => {
     localStorage.setItem('cookieConsent', 'accepted');
+    localStorage.setItem('cookieConsentDate', Date.now());
     banner.classList.remove('show');
+    setTimeout(() => banner.style.display = 'none', 500);
   });
 });
 </script>
+{% endif %}
