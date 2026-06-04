@@ -85,6 +85,14 @@
 </style>
 
 <script>
+function initAds() {
+  if (window.adsbygoogle && !window.adsLoaded) {
+    window.adsLoaded = true;
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const banner = document.getElementById('cookie-banner');
   const acceptBtn = document.getElementById('cookie-accept');
@@ -100,6 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
       banner.style.display = 'block';
       setTimeout(() => banner.classList.add('show'), 10);
     }, 800);
+  } else {
+    // Kalo udah pernah consent, baru load iklan
+    initAds();
   }
   
   acceptBtn.addEventListener('click', () => {
@@ -107,6 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('cookieConsentDate', Date.now());
     banner.classList.remove('show');
     setTimeout(() => banner.style.display = 'none', 500);
+    // Baru load iklan abis klik Mengerti
+    initAds();
   });
 });
 </script>
