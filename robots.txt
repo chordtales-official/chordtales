@@ -11,6 +11,7 @@ Disallow: /vendor/
 # Biarin Google baca CSS/JS buat render halaman
 Allow: /assets/css/
 Allow: /assets/js/
+Allow: /assets/img/
 
 # Lokasi sitemap
 Sitemap: https://chordtales.com/sitemap.xml
