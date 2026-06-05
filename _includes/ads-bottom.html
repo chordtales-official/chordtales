@@ -62,40 +62,43 @@
   let adShown = false;
   const wrapper = document.getElementById('ads-bottom-wrapper');
   const closeBtn = document.getElementById('ads-close-btn');
+  const PAGE_ID = location.pathname; // ID unik per halaman
+  const CLOSE_TIME_KEY = 'adsCloseTime_' + PAGE_ID;
 
-  // Cek kalo user udah pernah close
-  if(localStorage.getItem('adsBottomClosed') === 'true') return;
+  // Cek kalo user udah close & belum 10 menit
+  let closeTime = sessionStorage.getItem(CLOSE_TIME_KEY);
+  if(closeTime && (Date.now() - parseInt(closeTime)) < 600000) {
+    return; // Belum 10 menit, skip
+  }
 
-  // Fungsi munculin iklan
   function showAd() {
     if(adShown) return;
     adShown = true;
     wrapper.style.display = 'flex';
-    
-    // Push iklan baru jalan pas muncul
     (adsbygoogle = window.adsbygoogle || []).push({});
-    
-    // Copot event scroll biar ga jalan terus
     window.removeEventListener('scroll', onScroll);
   }
 
-  // Cek scroll
   function onScroll() {
     if(window.scrollY >= 300) {
       showAd();
     }
   }
 
-  // Tombol close
+  // Pas close, simpen waktu close + halaman ini
   closeBtn.addEventListener('click', function() {
     wrapper.style.display = 'none';
-    localStorage.setItem('adsBottomClosed', 'true');
+    sessionStorage.setItem(CLOSE_TIME_KEY, Date.now());
+    
+    // Reset setelah 10 menit biar muncul lagi
+    setTimeout(() => {
+      sessionStorage.removeItem(CLOSE_TIME_KEY);
+      adShown = false;
+      window.addEventListener('scroll', onScroll, {passive: true});
+    }, 600000); // 600000ms = 10 menit
   });
 
-  // Pasang event scroll
   window.addEventListener('scroll', onScroll, {passive: true});
-  
-  // Jaga2 kalo user reload pas udah scroll >300px
   if(window.scrollY >= 300) showAd();
 })();
 </script>
