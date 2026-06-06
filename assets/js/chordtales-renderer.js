@@ -8,7 +8,7 @@ async function initIcons(scope = document) {
             if (cached) {
                 globalIconDb = JSON.parse(cached);
             } else {
-                const res = await fetch('/assets/icon.json');
+                const res = await fetch('/assets/icon.json?v=4');
                 if (!res.ok) throw new Error('Failed to fetch icon.json');
                 globalIconDb = await res.json();
                 sessionStorage.setItem('ct_icon_db', JSON.stringify(globalIconDb));

@@ -298,7 +298,7 @@ function initBelajarChord() {
     const section = document.querySelector('#belajar-chord');
     if (!section) return;
 
-    fetch('/assets/chord.json')
+    fetch('/assets/chord.json?v=1')
     .then(res => res.json())
     .then(chordData => {
             // 1. Group chord per keluarga

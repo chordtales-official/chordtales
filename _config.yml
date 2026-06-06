@@ -42,6 +42,11 @@ exclude:
   - node_modules/
   - README.md
 
+# --- Includ Static Files
+include:
+  - assets/icon.json
+  - assets/chord.json
+
 # --- Plugins ---
 plugins:
   - jekyll-sitemap
