@@ -2,16 +2,8 @@ User-agent: *
 Allow: /
 
 # Blokir folder yang nggak perlu di-index
-Disallow: /assets/
-Disallow: /css/
-Disallow: /js/
 Disallow: /.jekyll-cache/
 Disallow: /vendor/
-
-# Biarin Google baca CSS/JS buat render halaman
-Allow: /assets/css/
-Allow: /assets/js/
-Allow: /assets/img/
 
 # Lokasi sitemap
 Sitemap: https://chordtales.com/sitemap.xml
