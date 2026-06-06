@@ -4,11 +4,10 @@ artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-06
 youtube_id: "zgSfpOOuI6Q"
-spotify_url: "https://open.spotify.com/track/..."
 slug: denny-caknan-widodari
-excerpt: "Chord Widodadri Denny Caknan & Guyon Waton, kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
+excerpt: "Chord Widodadri Denny Caknan & Guyon Waton, kunci gitar & lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'galau', 'denny caknan', 'widodari', 'lagu jawa', 'pop jawa']
 key: G
 lyrics: |

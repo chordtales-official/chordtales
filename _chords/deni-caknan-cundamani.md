@@ -8,7 +8,7 @@ last_modified_at: 2026-06-01
 youtube_id: "X5u1eu2Sqts"
 spotify_url: ""
 slug: denny-caknan-cundamani
-excerpt: "Chord Cundamani Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Cundamani Denny Caknan kunci gitar & lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['am', 'koplo', 'galau', 'denny caknan', 'cundamani', 'lagu jawa', 'pop jawa']
 key: Am
 lyrics: |
