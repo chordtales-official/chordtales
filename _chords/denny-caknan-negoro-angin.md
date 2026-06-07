@@ -4,9 +4,7 @@ artist: "Denny Caknan"
 genre: "Jawapop"
 category: jawapop
 date: 2026-06-07
-last_modified_at: 2026-06-07
 youtube_id: "WZYUSaHlGlk"
-slug: denny-caknan-negoro-angin
 excerpt: "Kunci gitar Negoro Angin Denny Caknan nada dasar C. Chord, lirik lengkap, transpose & diagram chord."
 tags: ['C', 'lagu jawa', 'jawapop', 'Denny Caknan', 'Negoro Angin', 'koplo']
 key: C

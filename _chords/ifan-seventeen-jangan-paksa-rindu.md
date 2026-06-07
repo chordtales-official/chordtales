@@ -4,9 +4,7 @@ artist: "Ifan Seventeen"
 genre: "Pop"
 category: pop
 date: 2026-06-02
-last_modified_at: 2026-06-02
 youtube_id: "38_bAaFI41w"
-slug: ifan-seventeen-jangan-paksa-rindu
 excerpt: "Chord Jangan Paksa Rindu Ifan Seventeen kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'indie', 'pop', 'ifan Seventeen', 'jangan paksa rindu', 'pop hits', 'lagu trend']
 key: C

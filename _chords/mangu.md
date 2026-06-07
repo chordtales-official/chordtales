@@ -4,9 +4,7 @@ artist: "Fourtwnty ft. Charita Utami"
 genre: "Pop/Akustik"
 category: lainnya
 date: 2026-06-04
-last_modified_at: 2026-06-04
 youtube_id: "JENpTmMQBQY"
-slug: fourtwnty-mangu
 excerpt: "Chord Mangu Fourtwnty ft Charita Utami kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'pop', 'Fourtwnty', 'Mangu', 'Charita Utami', 'pop hits', 'lagu trend', 'akustik']
 key: G

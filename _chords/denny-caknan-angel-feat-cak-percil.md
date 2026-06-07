@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-06-01
 youtube_id: "yVA2IuK28K4"
-slug: denny-caknan-angel-feat-cak-percil
 excerpt: "Chord Angel Denny Caknan feat. Cak Percil kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'kolaborasi', 'denny caknan', 'cak percil']
 key: C

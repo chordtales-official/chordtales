@@ -1,9 +1,9 @@
 # --- Identitas Utama ---
 email: halo.chordtales@gmail.com
-title: "ChordTales"
+title: "Chordtales"
 description: "Pusat kunci gitar dan lirik lagu terlengkap dengan tuner, transpose, chord diagram SVG & autoscroll."
 url: "https://chordtales.com"
-author: "Admin ChordTales"
+author: "Admin Chordtales"
 baseurl: ""
 default_image: /assets/img/og-chord-default.webp
 social:
@@ -54,6 +54,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-minifier
+  - jekyll-last-modified-at
 
 # --- Setting Minifier ---
 jekyll-minifier:

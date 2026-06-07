@@ -4,9 +4,7 @@ artist: "Ari Lasso"
 genre: "Pop"
 category: pop
 date: 2026-05-18
-last_modified_at: 2026-06-06
 youtube_id: "fQ3H3U6MzSE"
-slug: ari-lasso-hampa
 excerpt: "Chord Hampa Ari Lasso kunci gitar & lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'pop', 'rock', 'Ari Lasso', 'Hampa', 'pop 90', 'lagu lawas', 'Dewa 19']
 key: C

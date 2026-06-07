@@ -4,9 +4,7 @@ artist: "Payung Teduh"
 genre: "Indie"
 category: indie
 date: 2026-05-18
-last_modified_at: 2026-05-18
 youtube_id: "viW0M5R2BLo"
-slug: payung-teduh-Akad
 excerpt: "Chord Akad Payung Teduh kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [folk, Payung Teduh, Akad, indie, pop]
 key: C

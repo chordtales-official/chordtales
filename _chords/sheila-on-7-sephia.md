@@ -4,9 +4,7 @@ artist: "Sheila On 7"
 genre: "Pop"
 category: pop
 date: 2026-05-18
-last_modified_at: 2026-05-18
 youtube_id: "4tAg2H7tqD0"
-slug: sheila-on-7-sephia
 excerpt: "Chord Sephia Sheila On 7 kunci gitar asli Sephia lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [Pop Indo, Sheila On 7, Sephia, Indie, pop 90an, lawas]
 key: Am

@@ -4,9 +4,7 @@ artist: "Ecko Show & Verry Klau"
 genre: "Reggae"
 category: reggae
 date: 2026-06-07
-last_modified_at: 2026-06-07
 youtube_id: "ZGiniSAS9_8"
-slug: ecko-show-verry-klau-lu-kenal-veronica-ko
 excerpt: "Kunci gitar Lu Kenal Veronica Ko Ecko Show & Verry Klau nada dasar G. Chord, lirik lengkap, transpose & diagram chord."
 tags: ['G', 'lagu timur', 'reggae', 'Ecko Show & Verry Klau', 'Lu Kenal Veronica Ko', 'lagu daerah']
 key: G

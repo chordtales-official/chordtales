@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "pXbER2zxNWc"
-slug: denny-caknan-pingal
 excerpt: "Chord Pingal Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'cover', 'denny caknan', 'pingal']
 key: C

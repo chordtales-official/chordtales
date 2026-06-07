@@ -4,9 +4,7 @@ artist: "Omega Trio"
 genre: "Lainnya"
 category: lagu-batak
 date: 2026-06-06
-last_modified_at: 2026-06-06
 youtube_id: "WIAnwjP6DCA"
-slug: omega-trio-mardua-holong
 excerpt: "Kunci gitar Mardua Holong Omega Trio nada dasar G. Chord, lirik lengkap, transpose & diagram."
 tags: ['G', 'lagu batak', 'pop', 'omega trio', 'mardua holong', 'lagu daerah']
 key: G

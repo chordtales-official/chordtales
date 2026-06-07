@@ -4,9 +4,7 @@ artist: "Denny Caknan | Guyon Waton"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-06-06
 youtube_id: "qmyepgTGcIc"
-slug: denny-caknan-gampil
 excerpt: "Chord Gampil Denny Caknan & Guyon Waton, kunci gitar & lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'galau', 'denny caknan', 'guyon maton', 'gampil', 'lagu jawa', 'pop jawa']
 key: G

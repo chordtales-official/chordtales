@@ -4,9 +4,7 @@ artist: "Didik Budi"
 genre: "Jawapop"
 category: jawapop
 date: 2026-06-03
-last_modified_at: 2026-06-03
 youtube_id: "VFqClMw_4zo"
-slug: didik-budi-denok
 excerpt: "Chord DENOK Didik Budi kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'cinta', 'didik budi', 'denok', 'lagu jawa', 'jawa', 'pop']
 key: G

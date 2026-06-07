@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "B0V0aWVGuSs"
-slug: denny-caknan-langgeng-dayaning-rasa
 excerpt: "Chord Langgeng Dayaning Rasa Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'cinta', 'denny caknan', 'langgeng dayaning rasa', 'lagu jawa', 'jawa', 'pop']
 key: G

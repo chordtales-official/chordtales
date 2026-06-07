@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-06-01
 youtube_id: "XLYFCc4UH-I"
-slug: denny-caknan-dumes-feat-wawes
 excerpt: "Chord Dumes Denny Caknan feat. Wawes kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'kolaborasi', 'denny caknan', 'wawes', 'lagu jawa', 'pop jawa']
 key: C

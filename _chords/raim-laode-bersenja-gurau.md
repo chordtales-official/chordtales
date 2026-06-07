@@ -4,9 +4,7 @@ artist: "Raim Laode"
 genre: "Folk"
 category: folk
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "jmvX6XyvCy0"
-slug: raim-loade-bersenja-gurau
 excerpt: "Chord Bersenja Gurau Raim Laode kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'folk', 'pop', 'raim loade', 'bersenja gurau', 'pop hits', 'lagu trend']
 key: C

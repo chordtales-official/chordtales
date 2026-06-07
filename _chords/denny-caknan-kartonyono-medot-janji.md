@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "WlmWXoP0C0s"
-slug: denny-caknan-kartonyono-medot-janji
 excerpt: "Chord Kartonyono Medot Janji Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'denny caknan', 'kartonyono medot janji', 'lagu jawa', 'jawa', 'pop']
 key: G

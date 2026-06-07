@@ -4,9 +4,7 @@ artist: "Ussy Sulistiawaty"
 genre: "Pop"
 category: pop
 date: 2026-06-03
-last_modified_at: 2026-06-03
 youtube_id: "daWSFXpHQSk"
-slug: ussy-sulistiawaty-seadanya-kamu
 excerpt: "Chord Seadanya Kamu Ussy Sulistiawaty kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Em."
 tags: ['Em', 'indie', 'pop', 'Ussy Sulistiawaty', 'Seadanya Kamu', 'pop hits', 'lagu trend']
 key: Em

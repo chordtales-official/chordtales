@@ -5,9 +5,7 @@ artist: "Ndarboy Genk"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "jeccjxIgBJ0"
-slug: denny-caknan-mendung-tanpo-udan
 excerpt: "Chord Mendung Tanpo Udan Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'patah hati', 'denny caknan', 'ndarboy genk']
 key: C

@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "84mcvgoFLrw"
-slug: denny-caknan-tepian-nyaman
 excerpt: "Chord Tepian Nyaman Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'denny caknan', 'tepian nyaman', 'lagu jawa', 'jawa', 'pop']
 key: G

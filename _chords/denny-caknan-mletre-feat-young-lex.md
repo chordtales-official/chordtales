@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "tc6TkOS2exI"
-slug: denny-caknan-mletre-feat-young-lex
 excerpt: "Chord Mletre Denny Caknan feat. Young Lex kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Em."
 tags: ['Em', 'koplo', 'kolaborasi', 'denny caknan', 'young lex']
 key: Em

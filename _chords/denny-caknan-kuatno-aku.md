@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "0GkGZgL3bFk"
-slug: denny-caknan-kuatno-aku
 excerpt: "Chord Kuatno Aku Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'denny caknan', 'kuatno aku', 'lagu jawa', 'jawa', 'pop']
 key: C

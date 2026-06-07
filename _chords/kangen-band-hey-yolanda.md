@@ -4,9 +4,7 @@ artist: "Kangen Band"
 genre: "Lainnya"
 category: lainnya
 date: 2026-06-03
-last_modified_at: 2026-06-03
 youtube_id: "A7JjMFs5hEE"
-slug: kangen-band-hey-yolanda
 excerpt: "Chord Hey Yolanda Kangen Band kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Em."
 tags: ['Em', 'indie', 'pop', 'Kangen Band', 'Hey Yolanda', 'pop hits', 'lagu trend', 'lainnya']
 key: Em

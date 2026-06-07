@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "T0f5Mc-F-oQ"
-slug: denny-caknan-jajalen-aku
 excerpt: "Chord Jajalen Aku Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'denny caknan', 'jajalen aku', 'lagu jawa', 'jawa', 'pop']
 key: C

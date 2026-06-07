@@ -4,10 +4,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-06-01
 youtube_id: "W1e1ZZidrAg"
-spotify_url: ""
-slug: denny-caknan-sugeng-dalu
 excerpt: "Chord Sugeng Dalu Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'galau', 'denny caknan', 'sugeng dalu', 'pop', 'jawa']
 key: C

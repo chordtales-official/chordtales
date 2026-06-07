@@ -4,9 +4,7 @@ artist: "Yuni Shara"
 genre: "Lainnya"
 category: lainnya
 date: 2026-06-02
-last_modified_at: 2026-06-02
 youtube_id: "TFQA73-In-w"
-slug: yuni-shara-terlalu-lama-sendiri
 excerpt: "Chord Terlalu Lama Sendiri Yuni Shara kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: ['Am', 'indie', 'pop', 'yuni shara', 'kunto aji', 'terlalu lama sendiri', 'pop hits', 'lagu trend']
 key: Am

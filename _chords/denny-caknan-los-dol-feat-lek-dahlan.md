@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
-last_modified_at: 2026-06-01
 youtube_id: "77s99NET9Mw"
-slug: denny-caknan-los-dol-feat-lek-dahlan
 excerpt: "Chord Los Dol Denny Caknan feat. Lek Dahlan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'kolaborasi', 'denny caknan', 'lek dahlan']
 key: C

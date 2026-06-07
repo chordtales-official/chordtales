@@ -5,9 +5,7 @@ artist: "Denny Caknan"
 genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
-last_modified_at: 2026-06-01
 youtube_id: "30BilwJ6bUw"
-slug: denny-caknan-crito-mustahil
 excerpt: "Chord Crito Mustahil Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'patah hati', 'denny caknan', 'lagu jawa', 'pop jawa']
 key: C
