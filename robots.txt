@@ -1,9 +1,20 @@
 User-agent: *
 Allow: /
 
-# Blokir folder yang nggak perlu di-index
+# Blokir folder sampah build
 Disallow: /.jekyll-cache/
 Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /admin/
+Disallow: /backup/
 
-# Lokasi sitemap
+# Blokir file rahasia doang, jangan gebuk rata
+Disallow: /*config*.yml$
+Disallow: /*.env$
+Disallow: /*secret*.json$
+Disallow: /*backup*.zip$
+Disallow: /*backup*.sql$
+
+# Sitemap biar Google cepet nemu chord lu
 Sitemap: https://chordtales.com/sitemap.xml
