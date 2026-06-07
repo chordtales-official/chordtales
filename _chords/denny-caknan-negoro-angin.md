@@ -7,9 +7,9 @@ date: 2026-06-07
 last_modified_at: 2026-06-07
 youtube_id: "WZYUSaHlGlk"
 slug: denny-caknan-negoro-angin
-excerpt: "Kunci gitar Negoro Angin Denny Caknan nada dasar Dm. Chord, lirik lengkap, transpose & diagram chord. Capo 1/2."
-tags: ['Dm', 'lagu jawa', 'jawapop', 'Denny Caknan', 'Negoro Angin', 'koplo']
-key: Dm
+excerpt: "Kunci gitar Negoro Angin Denny Caknan nada dasar C. Chord, lirik lengkap, transpose & diagram chord."
+tags: ['C', 'lagu jawa', 'jawapop', 'Denny Caknan', 'Negoro Angin', 'koplo']
+key: C
 lyrics: |
   Tak tempuh sewelas sewu kilometer 
   Nyusul awakmu sing nate 
