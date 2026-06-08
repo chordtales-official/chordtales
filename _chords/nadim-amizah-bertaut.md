@@ -5,7 +5,7 @@ genre: "Folk"
 category: folk
 date: 2026-05-18
 youtube_id: "HyhLsy6b0XI"
-excerpt: "Chord Bertaut Nadin Amizah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+excerpt: "Chord Bertaut Nadin Amizah kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [folk, Nadin Amizah, Bertaut, indie, pop]
 key: C
 lyrics: |

@@ -5,7 +5,7 @@ genre: "Pop"
 category: pop
 date: 2026-06-03
 youtube_id: "t4bAmB20qAU"
-excerpt: "Chord Typeku Fani Rahmansyah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Typeku Fani Rahmansyah kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'indie', 'pop', 'fani rahmansyah', 'typeku', 'pop hits', 'lagu trend']
 key: C
 lyrics: |

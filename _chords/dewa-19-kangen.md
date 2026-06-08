@@ -5,7 +5,7 @@ genre: "Rock"
 category: rock
 date: 2026-05-18
 youtube_id: "YKK5_OQiEa4"
-excerpt: "Chord Kangen Dewa 19 kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Kangen Dewa 19 kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, pop, rock, Dewa 19, Kangen, pop 90, lagu lawas, Dewa 19]
 key: C
 lyrics: |

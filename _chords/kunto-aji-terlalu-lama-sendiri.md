@@ -5,7 +5,7 @@ genre: "Lainnya"
 category: lainnya
 date: 2026-06-02
 youtube_id: "TFQA73-In-w"
-excerpt: "Chord Terlalu Lama Sendiri Yuni Shara kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
+excerpt: "Chord Terlalu Lama Sendiri Yuni Shara kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: ['Am', 'indie', 'pop', 'yuni shara', 'kunto aji', 'terlalu lama sendiri', 'pop hits', 'lagu trend']
 key: Am
 lyrics: |

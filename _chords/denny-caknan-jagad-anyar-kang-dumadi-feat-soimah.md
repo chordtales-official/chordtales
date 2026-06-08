@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
 youtube_id: "vx3xCY9VROs"
-excerpt: "Chord Jagad Anyar Kang Dumadi Denny Caknan feat. Soimah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
+excerpt: "Chord Jagad Anyar Kang Dumadi Denny Caknan feat. Soimah kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: ['am', 'koplo', 'kolaborasi', 'denny caknan', 'soimah']
 key: Am
 lyrics: |

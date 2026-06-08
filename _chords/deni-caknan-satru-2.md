@@ -5,7 +5,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
 youtube_id: "rEjSkBl47OY"
-excerpt: "Chord Satru 2 Denny Caknan & Happy Asmara kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
+excerpt: "Chord Satru 2 Denny Caknan & Happy Asmara kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: ['Am', 'koplo', 'galau', 'denny caknan', 'happy asmara', 'satru 2', 'lagu jawa']
 key: Am
 lyrics: |

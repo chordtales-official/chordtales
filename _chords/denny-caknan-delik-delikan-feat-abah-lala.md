@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
 youtube_id: "uPPORnj7nUY"
-excerpt: "Chord Delik-Delikan Denny Caknan feat. Abah Lala kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
+excerpt: "Chord Delik-Delikan Denny Caknan feat. Abah Lala kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar G."
 tags: ['G', 'koplo', 'kolaborasi', 'denny caknan', 'abah lala', 'lagu jawa', 'pop', 'jawa']
 key: G
 lyrics: |

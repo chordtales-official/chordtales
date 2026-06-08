@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
 youtube_id: "fl-1kvnOEqY"
-excerpt: "Chord Kangen Mulih Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Kangen Mulih Denny Caknan kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'denny caknan', 'kangen mulih', 'lagu jawa', 'jawa', 'pop']
 key: C
 lyrics: |

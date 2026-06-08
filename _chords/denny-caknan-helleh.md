@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
 youtube_id: "yU4Mqf4gkGc"
-excerpt: "Chord Helleh Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Helleh Denny Caknan kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'denny caknan', 'helleh', 'pop', 'jawa', 'lagu jawa']
 key: C
 lyrics: |

@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
 youtube_id: "78Y0SxVVxP4"
-excerpt: "Chord Wirang Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Wirang Denny Caknan kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'denny caknan', 'wirang']
 key: C
 lyrics: |

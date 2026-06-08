@@ -5,7 +5,7 @@ genre: "Dangdut"
 category: dangdut
 date: 2026-05-18
 youtube_id: "Xo9egupmgoE"
-excerpt: "Chord Pamer Bojo Didi Kempot kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Pamer Bojo Didi Kempot kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: [C, koplo, Dangdut, Didi Kempot, Pamer Bojo, koplo, dangdut koplo, Didi Kempot]
 key: C
 lyrics: |

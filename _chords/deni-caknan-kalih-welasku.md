@@ -5,7 +5,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-05-18
 youtube_id: "c8M9ZWt1ipw"
-excerpt: "Chord Kalih Welasku Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
+excerpt: "Chord Kalih Welasku Denny Caknan kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am."
 tags: ['Am', 'koplo', 'galau', 'denny caknan', 'Kalih Welasku', 'lagu jawa']
 key: Am
 lyrics: |

@@ -5,7 +5,7 @@ genre: "Pop"
 category: pop
 date: 2026-05-18
 youtube_id: "dGcGbF4ex5o"
-excerpt: "Chord Dan Sheila On 7 kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+excerpt: "Chord Dan Sheila On 7 kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [Pop Indo, Sheila On 7, Dan, Indie, pop 90an, lawas]
 key: F
 lyrics: |

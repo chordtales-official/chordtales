@@ -5,7 +5,7 @@ genre: "Dangdut"
 category: dangdut
 date: 2026-05-18
 youtube_id: "7hRzocep0Z4"
-excerpt: "Chord Keranda Cinta Noer Halimah kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+excerpt: "Chord Keranda Cinta Noer Halimah kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [Dangdut Koplo, Noer Halimah, Keranda Cinta, Dangdut, Rhoma Irama]
 key: Am
 lyrics: |

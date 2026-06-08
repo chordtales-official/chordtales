@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
 youtube_id: "lHFOzj1_suE"
-excerpt: "Chord Sinarengan Denny Caknan feat. Bella Bonita kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
+excerpt: "Chord Sinarengan Denny Caknan feat. Bella Bonita kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar C."
 tags: ['C', 'koplo', 'kolaborasi', 'denny caknan', 'bella bonita']
 key: C
 lyrics: |

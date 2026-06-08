@@ -5,7 +5,7 @@ genre: "Indie"
 category: indie
 date: 2026-05-18
 youtube_id: "viW0M5R2BLo"
-excerpt: "Chord Akad Payung Teduh kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+excerpt: "Chord Akad Payung Teduh kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [folk, Payung Teduh, Akad, indie, pop]
 key: C
 lyrics: |

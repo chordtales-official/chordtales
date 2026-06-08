@@ -6,7 +6,7 @@ genre: "JawaPop"
 category: jawapop
 date: 2026-06-01
 youtube_id: "1abRrOGc4yU"
-excerpt: "Chord Gak Pernah Cukup Denny Caknan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar F."
+excerpt: "Chord Gak Pernah Cukup Denny Caknan kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar F."
 tags: ['F', 'koplo', 'patah hati', 'denny caknan']
 key: F
 lyrics: |

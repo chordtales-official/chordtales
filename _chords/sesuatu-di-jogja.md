@@ -5,7 +5,7 @@ genre: "Folk"
 category: Folk
 date: 2026-05-18
 youtube_id: "l2mI4vL95kU"
-excerpt: "Chord Sesuatu Di Jogja Adhitia Sofyan kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
+excerpt: "Chord Sesuatu Di Jogja Adhitia Sofyan kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram."
 tags: [Folk Indo, Adhitia Sofyan, Sesuatu Di Jogja, Indie]
 key: C
 lyrics: |
