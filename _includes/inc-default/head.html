@@ -2,6 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+<link rel="preload" as="image" href="{{ '/assets/img/herobanner.webp' | relative_url }}" fetchpriority="high" type="image/webp">
+
 <!-- Preload Font -->
 <link rel="preload" href="{{ '/assets/font/Inter_18pt-Regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/font/Inter_24pt-Bold.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
@@ -11,10 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
 
-<link rel="stylesheet" href="{{ '/assets/css/style-default.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/style-base.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/style-chord.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/rekomendasi.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
 <style>
   @font-face {
@@ -33,7 +32,3 @@
     font-weight: 700; font-style: normal; font-display: swap;
   }
 </style>
-
-<!-- SCRIPT ADSENSE - TARUH PALING BAWAH SEBELUM </head> -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1071319498684050"
-     crossorigin="anonymous"></script>

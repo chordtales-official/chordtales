@@ -144,7 +144,6 @@ async function initChordEngine() {
 /* --- SESI 02: CHORD INIT END --- */
 
 /* --- SESI 03: HEADER LOGIC START --- */
-// FIX 1%: Semua onclick -> addEventListener
 const themeToggle = $('#theme-toggle');
 if (themeToggle) {
     const savedTheme = localStorage.getItem('theme') || 'dark';
