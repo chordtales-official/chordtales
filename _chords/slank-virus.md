@@ -35,7 +35,7 @@ Yang aku mau kau mencoba..
 Tuk mengenal aku.
 Am        Em          F
 Yang aku mau kau belajar..
-       Fm  C       Am  C
+       Fm          Am   C
 Mencintai akuu..Tulusss..
             G
 Dan apa adanya.
@@ -57,12 +57,12 @@ Am        Em         F        C  Em
 Yang aku tau ku mencoba, terbukaa..
 Am        Em         F
 Yang aku tau ku sengaja,
-            Fm  C    Am  C
+            Fm       Am  C
 Tuk selalu bicara..Jujur..
            G
 Dan apa adanya.
 
-**MUSIK/INT :** F Em F C (2x) G
+**MUSIK/INT :** F C F C (2x) G
 
 **OUTRO**
 Dm          F            C

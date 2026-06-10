@@ -20,7 +20,7 @@ lyrics: |
                       Em
 Pernah berfikir tuk pergi
 F                        C        G
-Dan terkintas tinggalkan kau sendiri
+Dan terlintas tinggalkan kau sendiri
 C                    Em
 Sempat ingin sudahi sampai di sini
 F                 C        G
@@ -33,9 +33,13 @@ kutak bisaaa..Jauh..Jauh..Darimu..
 Dan tak bisa..Jauh..Jauh..Darimu..
 
 **INTRO :** C..
+                Em
 Lalau mau apa lagi
+F                      C          G
 Kalau kita sudah tak saling mengerti
+C                      Em
 Sampai kapan bertahan seperti ini
+F                   C       G
 Dua hati bercampur emosi tapi..
 
 **REFF**
@@ -46,10 +50,13 @@ Dan tak bisa..Jauh..Jauh..Darimu..
 
 **INTERLUDE :** Am..Em..Am..Em
             Bb..Gm..B
-
+Am                     Em
 Sabar..Sabar..Aku coba sabar..
+Am                            Em
 Sadar..Sadar..Seharusnya kita sadar..
+         F
 Kau dan aku tercipta
+       Fm
 Tak boleh berpisah..
 
 **REFF**

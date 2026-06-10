@@ -49,13 +49,13 @@ Benak ku melayang pada kisah kitaaa..
 Terlalu manis..Untuk di lupakan..
      Am                 Em
 Kenangan yang indah bersamamu
-    F     Em-Dm  -C
+    F        C
 Tinggalah mimpi..
    G                 F       C
 Terlalu manis..Untuk di lupakan..
       Am                  Em
 Kalau kita memang tak saling cinta
-     F      Em-Dm -C
+     F        C
 Tak akan terjadi..
              Em  -A
 Di antara kitaaaa..
@@ -82,22 +82,26 @@ Benak ku melayang pada kisah kitaaa..
 Terlalu manis..Untuk di lupakan..
      Am                 Em
 Kenangan yang indah bersamamu
-    F     Em-Dm  -C
+    F        C
 Tinggalah mimpi..
    G                 F       C
 Terlalu manis..Untuk di lupakan..
       Am                  Em
 Kalau kita memang tak saling cinta
+     F        C
+Tak akan terjadi..
 
    G                 F      C
 Terlalu manis..Untuk di lupakan..
      Am                 Em
 Kenangan yang indah bersamamu
-    F     Em-Dm  -C
+    F        C
 Tinggalah mimpi..
    G                 F       C
 Terlalu manis..Untuk di lupakan..
       Am                  Em
 Kalau kita memang tak saling cinta
+     F        C
+Tak akan terjadi..
 
 **OUTRO :** G F C A F C
