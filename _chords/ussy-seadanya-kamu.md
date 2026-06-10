@@ -5,7 +5,7 @@ genre: "Pop"
 category: pop
 date: 2026-06-03
 youtube_id: "daWSFXpHQSk"
-excerpt: "Chord Seadanya Kamu Ussy Sulistiawaty kunci gitar asli dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Em."
+excerpt: "Chord Seadanya Kamu Ussy Sulistiawaty kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Em."
 tags: ['Em', 'indie', 'pop', 'Ussy Sulistiawaty', 'Seadanya Kamu', 'pop hits', 'lagu trend']
 key: Em
 lyrics: |
