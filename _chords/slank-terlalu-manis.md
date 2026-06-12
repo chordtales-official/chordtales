@@ -20,28 +20,28 @@ lyrics: |
 
 G                     C
 Ku ambil gitar, Dan mulai menyanyikan
-E                    F           C
+Em                    F           C
 Lagu lama yang biasa kita nyanyikan..
 G                           C
 Tapi tak sepatah kata yang bisa terungkap
-E                   F     E-Dm-C   G
+Em                   F            C
 Hanya ingatan yang ada di kepala..haa
 
 **INTRO :** G C G C 2x
 
 G                     C
 Hari berganti, Angin tetap berhembus
-E                   F          C
+Em                   F          C
 Cuaca berubah, Daun-daun tetap tumbuh..
 G                       C
 Dan kata hatiku pun tak pernah berubah
-E                F      C
+Em                F      C
 Berjalan dengan apa adanya..
 
 **PRE-CHORUS**
 D                Am              D
 Di malam yang dingin dan gelap sepi
-              Am               C
+              Am        C
 Benak ku melayang pada kisah kitaaa..
 
 **CHORUS/REFF**
@@ -72,7 +72,7 @@ C          Em
 Aaaaa..haaaaaa..
 
 **PRE-CHORUS**
-D                Am            G  D
+D                Am              D
 Di malam yang dingin dan gelap sepi
               Am               C
 Benak ku melayang pada kisah kitaaa..
