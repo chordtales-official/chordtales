@@ -15,7 +15,34 @@ lyrics: |
 ---
 
 {% include youtube.html %}
-#### <span style="color: #1abc9c;">*CHORD DI SEDERHANAKAN | CAPO FRET 3 | NADA G*</span>
+<div class="adsense-block">
+<h2>Makna Lagu Lu Kenal Veronica Ko - Ecko Show & Verry Klau</h2>
+<p><strong>Lu Kenal Veronica Ko</strong> merupakan single kolaborasi dari <strong>Ecko Show & Verry Klau</strong> yang tayang perdana pada 8 Mei 2026. Lagu bergenre <strong>Reggae Timur</strong> ini viral di platform TikTok karena liriknya yang jenaka dan mudah diingat, dibalut logat khas Indonesia Timur.</p>
+<p>Lagu ini menceritakan kisah seorang pemuda yang sedang melakukan pendekatan atau PDKT kepada seorang gadis bernama Veronica. Keunikan lagu terletak pada dialog kocak tentang syarat dari calon mertua, yaitu "suka laki-laki bisa bahasa Inggris". Kalimat <em>"Bluetooth device has connected successfully"</em> yang menjadi hook di bagian reff turut menjadi pemicu viralnya lagu ini di media sosial sebagai bahan sound konten.</p>
+<p>Dengan aransemen musik reggae yang santai namun enerjik, lagu ini berhasil memadukan unsur komedi, budaya lokal, dan musikalitas khas Indonesia Timur yang menghibur.</p>
+
+<div class="tips-box">
+<h3>Tingkat Kesulitan: <span class="rating">★★☆☆☆</span> Pemula</h3>
+<p>Nada dasar yang digunakan adalah <strong>G</strong>. Chord dalam artikel ini telah <span class="highlight">disederhanakan</span> dari nada asli Bb ke G agar mudah dimainkan oleh pemula tanpa perlu capo. Tempo asli lagu berada di kisaran 95 BPM dengan birama reggae.</p>
+<p><strong>Catatan:</strong> Untuk memainkan di nada asli seperti versi Ecko Show & Verry Klau, gunakan transpose +3 atau capo fret 3 dari chord G ini.</p>
+</div>
+
+<h3>Panduan Memainkan Gitar Lagu Lu Kenal Veronica Ko</h3>
+<ul class="timeline-list">
+  <li><strong>Bagian Intro</strong>: Dapat dimainkan dengan petikan atau strumming santai. Chord: C - G - Am - F - G. Ikuti pola reggae dengan penekanan pada ketukan 2 dan 4.</li>
+  
+  <li><strong>Bagian Verse/Bait</strong>: Gunakan pola strumming reggae <strong>↓ - ↑↓↑</strong> dengan jeda atau muted di ketukan 1 dan 3. Kunci utama: G - Am - F - G - C - F - C.</li>
+  
+  <li><strong>Bagian Pre-Chorus & Chorus</strong>: Ini bagian paling ikonik. Mainkan dengan groove reggae yang stabil. Chord Chorus: G - F - C. Tekankan pada lirik "Bluetooth device has connected successfully" sebagai ciri khas lagu.</li>
+  
+  <li><strong>Bagian Rap Verse</strong>: Chord cenderung statis. Cukup mainkan Gm7 - Am - F - C - Dm - G secara berulang mengikuti flow rap. Fokus pada ritme, tidak perlu genjrengan kencang.</li>
+
+  <li><strong>Interlude</strong>: Pengulangan chord G - F - C sebanyak 2 kali. Dapat diisi dengan improvisasi melodi atau tetap strumming santai.</li>
+</ul>
+</div>
+
+<hr style="border:1px solid var(--border-color)">
+
 **INTRO VOCAL**
                   G
 Lu kenal veronica ko..

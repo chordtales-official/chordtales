@@ -285,6 +285,145 @@
 }
 /* --- SESI 04: STYLE SECTION CONTENT END --- */
 
+/* --- SESI ADSENSE BLOCK: ANTI MELEBER START --- */
+.tips-box {
+  background: rgba(26, 188, 156, 0.1);
+  border: 1px solid var(--accent-1);
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: var(--font-main, system-ui, sans-serif);
+  line-height: 1.7;
+}
+
+.adsense-block {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: var(--font-main, system-ui, sans-serif);
+}
+
+.adsense-block h2, .adsense-block h3 {
+  color: var(--text-main);
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+  font-family: var(--font-main, system-ui, sans-serif);
+}
+
+.adsense-block p {
+  color: var(--text-main);
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  font-family: var(--font-main, system-ui, sans-serif);
+}
+
+/* LIST BIASA TANPA BULLET - BUAT LIST NORMAL */
+.adsense-block ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.adsense-block ul li {
+  color: var(--text-main);
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  font-family: var(--font-main, system-ui, sans-serif);
+  padding-left: 20px;
+  position: relative;
+}
+
+.adsense-block ul li::before {
+  content: '•';
+  color: var(--accent-1);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* TIMELINE LIST - BULET SOLID + GARIS VERTIKAL LURUS */
+.adsense-block .timeline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+  position: relative;
+}
+
+/* GARIS VERTIKAL PANJANG - UDAH DITENGAHIN */
+.adsense-block .timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 7px; /* Titik tengah bulet 16px */
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: var(--accent-1);
+  opacity: 0.4;
+}
+
+.adsense-block .timeline-list li {
+  color: var(--text-main);
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0 0 24px 0;
+  padding-left: 32px; /* Jarak teks dari bulet */
+  position: relative;
+  font-family: var(--font-main, system-ui, sans-serif);
+}
+
+/* BULETNYA - SOLID + LURUS */
+.adsense-block .timeline-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px; /* Sejajar sama baris pertama */
+  width: 16px;
+  height: 16px;
+  background: var(--accent-1); /* BULET SOLID */
+  border: 2px solid var(--bg-body); /* Outline biar kontras */
+  border-radius: 50%;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.adsense-block .timeline-list li:last-child {
+  margin-bottom: 0;
+}
+
+.adsense-block .rating {
+  color: #f39c12;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.adsense-block .highlight {
+  background: var(--accent-1);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.notice-badge {
+  text-align: center;
+  background: var(--bg-body);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+/* --- SESI ADSENSE BLOCK: ANTI MELEBER END --- */
+
 /* --- SESI 05: DIAGRAM BANK REFIX TOOLTIP START --- */
 .chord-tooltip {
     position: absolute;
