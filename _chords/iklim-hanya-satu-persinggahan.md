@@ -4,7 +4,7 @@ artist: "Iklim"
 genre: "Malaysia"
 category: malaysia
 date: 2026-06-27
-youtube_id: "10n_XTIa4a4"
+youtube_id: "PCUTa4cbsiE"
 excerpt: "Chord Hanya Satu Persinggahan Iklim kunci gitar dan lirik lengkap. Fitur transpose, auto-scroll, chord diagram. Nada dasar Am, Capo 3."
 tags: ['Am', 'Cm', 'capo 3', 'malaysia', 'balada', 'iklim', 'rock melayu', '90an', 'persinggahan']
 key: Am
