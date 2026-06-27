@@ -35,6 +35,10 @@
   title: dangdut
   icon: dangdut
   
+- name: malaysia
+  title: Malaysia
+  icon: rock
+  
 - name: lainnya
   title: Lainnya
   icon: lainnya
