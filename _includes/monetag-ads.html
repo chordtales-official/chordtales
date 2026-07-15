@@ -1,0 +1,69 @@
+<style>
+  .monetag-wrap {
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  .monetag-wrap .monetag-label {
+    font-size: 10px;
+    color: #888;
+    display: block;
+    margin-bottom: 6px;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+  }
+  .monetag-banner {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 336px;
+    min-height: 30px;
+    overflow: visible;
+  }
+  .monetag-sticky {
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    text-align: center;
+    pointer-events: none;
+  }
+  .monetag-sticky-inner {
+    display: inline-block;
+    pointer-events: all;
+    max-width: 320px;
+    max-height: 50px;
+    min-height: 50px;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 6px;
+  }
+  @media (max-width: 480px) {
+    .monetag-sticky {
+      bottom: 65px;
+    }
+    .monetag-banner {
+      min-height: 30px;
+      max-width: 300px;
+    }
+  }
+</style>
+
+{% if include.type == "1" %}
+<div class="monetag-wrap monetag-banner">
+  <span class="monetag-label">Advertisement</span>
+  <div id="monetag-atf-1"></div>
+</div>
+<script src="https://monetag.com/tag.min.js" data-zone="ZONE_ID_1" data-container="monetag-atf-1"></script>
+
+{% elsif include.type == "2" %}
+<div class="monetag-wrap monetag-sticky">
+  <div class="monetag-sticky-inner">
+    <div id="monetag-sticky-2"></div>
+  </div>
+</div>
+<script src="https://monetag.com/tag.min.js" data-zone="ZONE_ID_2" data-container="monetag-sticky-2"></script>
+{% endif %}

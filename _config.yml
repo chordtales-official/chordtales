@@ -101,5 +101,4 @@ defaults:
       layout: "default"
 
 # --- Setting Tambahan ---
-ads_enabled: true
 logo: /assets/img/logo.webp

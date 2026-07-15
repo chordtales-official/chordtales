@@ -23,35 +23,35 @@ lyrics: |
 
 <div class="tips-box">
 <h3>Tingkat Kesulitan: <span class="rating">★★☆</span> Mudah</h3>
-<p>Nada dasar artikel ini <strong>Am + Capo 3 = Cm asli</strong>. Chord yang dipake: Am, G, F#m, E, Dm. Semua terbuka kecuali F#m setengah barre fret 2. Jauh lebih gampang dari versi asli yang banyak barre: Cm, Bb, F#m.</p>
-<p><strong>Catatan:</strong> Lagu ini dirilis tahun <strong>1992</strong>. Kunci lagu ada di perpindahan <strong>E ke Dm</strong> di reff versi Capo. Progresi utama: Am - G - F#m - E - Dm. Kalo mau main tanpa Capo nada asli, pake: Cm - Bb - F#m - G - Gm.</p>
+<p>Nada dasar artikel ini <strong>Am + Capo 3 = Cm asli</strong>. Chord yang dipake: Am, G, F, E, Dm. Semua terbuka kecuali F setengah barre fret 2. Jauh lebih gampang dari versi asli yang banyak barre: Cm, Bb, F.</p>
+<p><strong>Catatan:</strong> Lagu ini dirilis tahun <strong>1992</strong>. Kunci lagu ada di perpindahan <strong>E ke Dm</strong> di reff versi Capo. Progresi utama: Am - G - F - E - Dm. Kalo mau main tanpa Capo nada asli, pake: Cm - Bb - F - G - Gm.</p>
 </div>
 
 <h3>Panduan Memainkan Gitar Lagu Hanya Satu Persinggahan</h3>
 <ul class="timeline-list">
   <li><strong>Setting</strong>: Pasang <strong>Capo di fret 3</strong> dulu. Tanpa Capo bakal kedengeran 3 nada lebih rendah dari aslinya.</li>
-  <li><strong>Bagian Intro</strong>: Am - G - F#m - E. Petik pelan-pelan atau genjreng santai ↓↓↑↓ buat ngebangun suasana galau dari awal.</li>
-  <li><strong>Bagian Verse/Bait</strong>: Progresi: Am - G - F#m - E. Genjreng santai, tekan di lirik `Bagaikan pisau mengiris hati`.</li>
+  <li><strong>Bagian Intro</strong>: Am - G - F - E. Petik pelan-pelan atau genjreng santai ↓↓↑↓ buat ngebangun suasana galau dari awal.</li>
+  <li><strong>Bagian Verse/Bait</strong>: Progresi: Am - G - F - E. Genjreng santai, tekan di lirik `Bagaikan pisau mengiris hati`.</li>
   <li><strong>Bagian Reff</strong>: Bagian paling ikonik. Chord: E - Am - Dm - Am. Ulangi 2x. Hentakan di `Hubungan kita suatu persinggahan...` harus dalem. Ini jantungnya lagu.</li>
-  <li><strong>Bagian Bridge</strong>: F#m - E - Am. Dipake di `Aku tidak menjanjikan...` buat naikin emosi sebelum balik ke reff.</li>
-  <li><strong>Bagian Outro</strong>: Balik ke progresi Verse Am - G - F#m - E. Akhiri di Am biar kesannya menggantung, sesuai tema "persinggahan".</li>
+  <li><strong>Bagian Bridge</strong>: F - E - Am. Dipake di `Aku tidak menjanjikan...` buat naikin emosi sebelum balik ke reff.</li>
+  <li><strong>Bagian Outro</strong>: Balik ke progresi Verse Am - G - F - E. Akhiri di Am biar kesannya menggantung, sesuai tema "persinggahan".</li>
 </ul>
 
 <h3>Catatan Tambahan</h3>
-<p>Untuk pemula, F#m bisa diganti <strong>F#m7 = 242222</strong> biar jari ga kram. <strong>Versi Tanpa Capo / Nada Asli Cm</strong>: Cm - Bb - F#m - G - Gm. Tapi siap-siap banyak barre ya bro. Tempo lagu sekitar 70-75 BPM, birama 4/4. Lagu ini cocok banget buat latihan pindah Am - G - F#m - E.</p>
+<p>Untuk pemula, F bisa diganti <strong>F#m7 = 242222</strong> biar jari ga kram. <strong>Versi Tanpa Capo / Nada Asli Cm</strong>: Cm - Bb - F - G - Gm. Tapi siap-siap banyak barre ya bro. Tempo lagu sekitar 70-75 BPM, birama 4/4. Lagu ini cocok banget buat latihan pindah Am - G - F - E.</p>
 </div>
 <hr style="border:1px solid var(--border-color)">
 
-*INTRO :* Am  G  F#m  E
+*INTRO :* Am  G  F  E
 
 *VERSE*
            Am              G
 Di sini kasih pernah berbunga
-         F#m         E
+         F         E
 Tiada harum tiada warna
           Am             G
 Disini cinta pernah membara
-             F#m            E
+             F            E
 Tanpa bahang dan tanpa apinya
 
 ♪
@@ -63,11 +63,11 @@ Hidup kita berdua
 *VERSE*
            Am             G
 Disini langit mendung selalu
-          F#m           E
+          F           E
 Tiada cahaya menyinari ku
          Am            G
 Disini aku tiada terdaya
-           F#m           E
+           F           E
 Mengikut kata tanpa bicara
 
 ♪
@@ -91,23 +91,23 @@ Demi hidup yang lebih sempurna
 Anggaplah kehadiran ku
         Am
 Hanya satu persinggahan
-    F#m
+    F
 Aku tidak menjanjikan
     E
 Mahligai impian
-F#m       E           Am
+F       E           Am
 Sebagaimana kau harapkan
 
-*INTRO* : Am  G  F#m  E (2x) ♪
+*INTRO* : Am  G  F  E (2x) ♪
 
 *VERSE*
           Am             G
 Biarlah jauh dari pandangan
-         F#m            E
+         F            E
 Daripada dekat penuh siksa
           Am          G
 Biar berduka biar melara
-          F#m             E
+          F             E
 Dari sengketa sepanjang masa
 
 ♪
@@ -119,11 +119,11 @@ Ku menghambakan diri
 *VERSE*
                Am           G
 Nantinya kau tahu artinya sepi
-            F#m           E
+            F           E
 Bagaikan pisau mengiris hati
               Am             G
 Nantinya kau tahu artinya rindu
-            F#m          E
+            F          E
 Bagai tertusuk duri sembilu
 
 ♪
@@ -147,13 +147,13 @@ Demi hidup yang lebih sempurna
 Anggaplah kehadiran ku
         Am
 Hanya satu persinggahan
-    F#m
+    F
 Aku tidak menjanjikan
     E
 Mahligai impian
-F#m       E           Am
+F       E           Am
 Sebagaimana kau harapkan
 
 *OUTRO*
-F#m         E           Am
+F         E           Am
 Hanyalah satu persinggahan..
