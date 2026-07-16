@@ -19,9 +19,28 @@
   <script src="{{ '/assets/js/chordtales-events.js' | relative_url }}" defer></script>
  
   <!-- <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1071319498684050" crossorigin="anonymous"></script> -->
-  <script>(function(s){s.dataset.zone='11306910',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+  
+  <script>
+    (function() {
+      const now = Date.now();
+      // Jeda waktu dikunci selama 5 menit
+      const cooldownPeriod = 5 * 60 * 1000; 
 
-  <script>(function(s){s.dataset.zone='11306844',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+      // 1. Capping untuk In-Page Push (Fantastic tag)
+      const lastPush = localStorage.getItem('mt_push_last_seen');
+      if (!lastPush || (now - lastPush > cooldownPeriod)) {
+        (function(s){s.dataset.zone='11306910',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+        localStorage.setItem('mt_push_last_seen', now);
+      }
+
+      // 2. Capping untuk Vignette Banner (Epic tag)
+      const lastVignette = localStorage.getItem('mt_vignette_last_seen');
+      if (!lastVignette || (now - lastVignette > cooldownPeriod)) {
+        (function(s){s.dataset.zone='11306844',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+        localStorage.setItem('mt_vignette_last_seen', now);
+      }
+    })();
+  </script>
   
   {% if page.layout == 'chord' %}
     {% include schema-blogposting.html %}
